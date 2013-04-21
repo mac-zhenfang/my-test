@@ -1,0 +1,6 @@
+					Shard Router (10.244.178.104:27019, 10.244.178.207:27019)	-> Config Server (10.224.178.104:2000)
+		    			/														\															\ 							\						\
+		 		Shard1(Replication Set 1)									Shard2 (Replication Set2)										Shard 3(No replication)		Shard 4(No replication)	Shard 5 (No replication)
+		 /				|    	           		\								/						\					\					\							\						\
+10.224.178.104:27017(P)  10.224.178.104:27018	10.224.178.207:27017     10.224.178.104:29017(P)  10.224.178.104:29018	10.224.178.207:29017    10.224.178.163:28017	10.224.178.167:30017	10.224.178.165:31017
+/spare/mongo_1				/spare/mongo_2			/spare/mongo_3			/spare/mongo_11				/spare/mongo_22		/spare/mongo_33			/spare/mongo_111	/spare/mongod_1111			/spare/mongod_11111

@@ -1,0 +1,9 @@
+Configure and Install
+
+./configure --prefix=/usr/local/nginx --conf-path=/usr/local/nginx/nginx.conf   --pid-path=/usr/local/nginx/nginx.pid --with-http_ssl_module --with-http_dav_module --http-client-body-temp-path=/usr/local/nginx/body --with-sha1-asm --with-sha1=/usr/include --with-http_perl_module --with-http_ssl_module --http-proxy-temp-path=/usr/local/nginx/proxy --http-fastcgi-temp-path=/usr/local/nginx/fastcgi --with-debug --with-http_flv_module
+
+./configure --prefix=/usr/local/nginx_macf --conf-path=/usr/local/nginx_macf/nginx.conf   --pid-path=/usr/local/nginx_macf/nginx.pid --with-http_ssl_module --with-http_dav_module --http-client-body-temp-path=/usr/local/nginx_macf/body --with-sha1-asm --with-sha1=/usr/include --with-http_perl_module --with-http_ssl_module --http-proxy-temp-path=/usr/local/nginx_macf/proxy --http-fastcgi-temp-path=/usr/local/nginx_macf/fastcgi --with-debug --with-http_flv_module
+
+with gridfs
+
+./configure --prefix=/usr/local/nginx_macf --conf-path=/usr/local/nginx_macf/conf/nginx.conf   --pid-path=/usr/local/nginx_macf/nginx.pid --with-http_ssl_module --add-module=/var/nginx_modules/mdirolf-nginx-gridfs-a4016c3 --with-http_dav_module --http-client-body-temp-path=/usr/local/nginx_macf/body --with-sha1-asm --with-sha1=/usr/include --with-http_ssl_module --http-proxy-temp-path=/usr/local/nginx_macf/proxy --http-fastcgi-temp-path=/usr/local/nginx_macf/fastcgi --with-debug --with-http_flv_module

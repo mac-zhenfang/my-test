@@ -1,0 +1,66 @@
+Real-time analytics
+
+Flows: 
+1. Scribe append a file and rotate the file daily - One app might have >1 log file append every day.
+2. The MapReduce starts and starts from the offset and only read the limited lines in.
+    (It might need to scan the folder and use  file-Path : offset format to record down multiple file-offset mapping)
+	- 1. MR use the date as filtered path: /DMS/DMI/2011/07/11
+	- 2. Before the MR start, it set the offset and numberlines into configuration
+	- 3. When the MR start, it get the offset/numberlines and define the right splits (need to do some readlines to get the offset after read the numberlines)
+	- 4. After determine the splits, start the MapReduce job
+3. After the Job successfully executed, record the last offset and save it into DistributeCache(File)
+4. In the reduce, it write the the HFile directly.
+
+Highlights:
+
+1. Need priority scheduler setting 
+   - Different App has different setting of maximum slots (CPUs)
+   - In one App, we should define the job priority for different job, real-time job has the highest priority.
+   - 
+   
+Way of adopting jobs from App
+
+HighLights:
+
+ - How to expand our servers according to App's requirements, according to 
+   a. How big the raw log the App sends
+   b. The performance requirements
+ 
+ - How to add new jobs without affecting the existing jobs in the extreme cases
+   
+
+To have:
+
+	- Fair Scheduler and clear definition of relationship of application and jobs
+
+	- "Performance evaluation system" to check: How many CPUs used for an application based on how many data the job needs and what kind of latency the app needs.
+
+	- Admin setting for priority and job definition
+	
+	- Job Statistic to show the CPU trends: Total CPUs/in one day, how many CPUs cost in the busy time/free time
+
+Flows:
+1. App use the 'Hive Job Spec WebSite' to define the job
+   a. Job Name/Input Data Path/Output/The logic/the performance requirements
+   b. According to the input, we evaluate the performance data/the SPEC
+   c. The Task Owner review the SPEC and the performance ETA
+   d. The Task Owner use the 'Dev guide' and 'MapReduce performance tunning guide' to write the code and generate the test cases
+   e. The TO use the 'Log Tool' and 'MR performance Evaluation Tool' to tune the performance, if any differences, send the differences, modify the SPEC or let the customer know.
+   f. The TO use 'Job Statistic Tool' to see the historical data.
+	
+Job Setting example:  
+
+	<pool name=“dms">
+		<minMaps>5</minMaps> 
+		<minReduces>5</minReduces>
+			<!-- Even in the extreme concurrent cases, the DMS still can ocuppy 10 CPUs -->
+		<maxMaps>25</maxMaps>
+		<maxReduces>25</maxReduces>
+			<!-- Above shows at least the DMS can occupy 50 CPUs -->
+		<maxRunningJobs>25</maxRunningJobs>
+		<weight>2.0</weight>
+		<schedulingMode>fairsheduler</schedulingMode>
+		<minSharePreemptionTimeout>300</minSharePreemptionTimeout>
+	</pool>
+	
+Hardware support: we need to enable HT

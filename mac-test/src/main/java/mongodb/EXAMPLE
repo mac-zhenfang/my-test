@@ -1,0 +1,107 @@
+/**
+002. * Simple Example that shows creating a people (id:number, name:string,
+003. * gender:string) collection and then adding, finding, updating and deleting.
+004. * You need to download and install MongoDB (www.mongodb.org) and run the
+005. * server. You’ll also need to have the mongo-1.2.jar in your class path.
+006. */
+007. 
+008.package org.vsbabu.examples.mongo;
+009. 
+010.import java.net.UnknownHostException;
+011.import java.util.regex.Pattern;
+012. 
+013.import com.mongodb.*;
+014. 
+015./**
+016. * @author vsbabu
+017. */
+018.public class ManagePeople {
+019. 
+020.    public static void main(String[] args) {
+021. 
+022.        try {
+023.            Mongo m = new Mongo("localhost", 27017);
+024.            DB db = m.getDB("sampledb");
+025.            DBCollection coll = db.getCollection("people");
+026. 
+027.            // clear records if any
+028.            DBCursor cur = coll.find();
+029.            while (cur.hasNext())
+030.                coll.remove(cur.next());
+031. 
+032.            // create a unique ascending index on id;
+033.            //doesn’t seem to work? it works from python and javascript
+034.            coll.ensureIndex(new BasicDBObject("id", 1).append("unique", true));
+035.            coll.createIndex(new BasicDBObject("name", 1));
+036.            coll.insert(makePersonDocument(6655, "James", "male"));
+037.            coll.insert(makePersonDocument(6797, "Bond", "male"));
+038.            coll.insert(makePersonDocument(6643, "Cheryl", "female"));
+039.            coll.insert(makePersonDocument(7200, "Scarlett", "female"));
+040.            coll.insert(makePersonDocument(6400, "Jacks", "male"));
+041.            System.out.println("Total Records : " + coll.getCount());
+042. 
+043.            cur = coll.find();
+044.            printResults(cur, "Find All Records");
+045. 
+046.            cur = coll.find(new BasicDBObject("id", 6655));
+047.            printResults(cur, "Find id = 6655");
+048. 
+049.            cur = coll.find(new BasicDBObject()
+050.                    .append("id", new BasicDBObject("$lte", 6700)));
+051.            printResults(cur, "Find id <= 6700");
+052. 
+053.            cur = coll.find(new BasicDBObject()
+054.                    .append("id", new BasicDBObject("$lte", 6700))
+055.                    .append("gender", "male"));
+056.            printResults(cur, "Find id <= 6700 and gender = male");
+057. 
+058.            cur = coll.find(new BasicDBObject()
+059.                    .append("name", Pattern.compile("^ja.*?s$", Pattern.CASE_INSENSITIVE)))
+060.                    .sort(new BasicDBObject("name", -1));
+061.            printResults(cur, "Find name like Ja%s and sort reverse by name");
+062.             
+063.            cur = coll.find(new BasicDBObject()
+064.                    .append("gender", "female"))
+065.                    .sort(new BasicDBObject("id", -1))
+066.                    .limit(2);
+067.            printResults(cur, "Get top 2 (by id) ladies");
+068.             
+069.            //let us reduce every body’s phone numbers by 10; add Sir to males, Mme to ladies
+070.            cur  = coll.find();
+071.            while(cur.hasNext()) {
+072.                BasicDBObject set = new BasicDBObject("$inc", new BasicDBObject("id", -10));
+073.                if ("male".equals(cur.next().get("gender")))
+074.                    set.append("$set", new BasicDBObject("name", "Sir ".concat((String) cur.curr().get("name"))));
+075.                else
+076.                    set.append("$set", new BasicDBObject("name", "Mme ".concat((String) cur.curr().get("name"))));
+077.                coll.update(cur.curr(), set);
+078.            }
+079.            cur  = coll.find();
+080.            printResults(cur, "All, after id and name update");
+081.             
+082.        }
+083.        catch (UnknownHostException ex) {
+084.            ex.printStackTrace();
+085.        }
+086.        catch (MongoException ex) {
+087.            ex.printStackTrace();
+088.        }
+089. 
+090.    }
+091. 
+092.    private static void printResults(DBCursor cur, String message) {
+093.        System.out.println("<<<<<<<<<< " + message + " >>>>>>>>>>>>");
+094.        while (cur.hasNext()) {
+095.            System.out.println(cur.next().get("id") + "," + cur.curr().get("name") + "," + cur.curr().get("gender"));
+096.        }
+097.    }
+098. 
+099.    private static BasicDBObject makePersonDocument(int id, String name, String gender) {
+100.        BasicDBObject doc = new BasicDBObject();
+101.        doc.put("id", id);
+102.        doc.put("name", name);
+103.        doc.put("gender", gender);
+104.        return doc;
+105.    }
+106. 
+107.}

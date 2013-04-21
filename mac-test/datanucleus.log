@@ -1,0 +1,1468 @@
+13:33:28,856 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+13:33:51,422 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+13:49:44,997 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+13:51:05,629 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+13:51:05,884 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.core.resources" but it cannot be resolved.
+13:51:05,885 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.core.runtime" but it cannot be resolved.
+13:51:05,885 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.text" but it cannot be resolved.
+13:51:05,956 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.0.3) : Enhancement of classes
+13:51:06,161 (main) WARN  [DataNucleus.MetaData] - MetaData Parser encountered an error in file "file:/home/mac/workspace/mac-test/src/main/java/jdo/package.jdo" at line 11, column 6 : cvc-elt.1: Cannot find the declaration of element 'jdo'. - Please check your specification of DTD and the validity of the MetaData XML that you have specified.
+13:51:06,191 (main) WARN  [DataNucleus.MetaData] - MetaData Parser encountered an error in file "file:/home/mac/workspace/mac-test/target/classes/jdo/package.jdo" at line 11, column 6 : cvc-elt.1: Cannot find the declaration of element 'jdo'. - Please check your specification of DTD and the validity of the MetaData XML that you have specified.
+13:51:06,228 (main) INFO  [DataNucleus.MetaData] - Class "classloader.CostomizedClassLoader" has no MetaData or annotations.
+13:51:06,228 (main) INFO  [DataNucleus.MetaData] - Class "classloader.MainTestList" has no MetaData or annotations.
+13:51:06,230 (main) INFO  [DataNucleus.MetaData] - Class "common.ArrayListToArray" has no MetaData or annotations.
+13:51:06,231 (main) INFO  [DataNucleus.MetaData] - Class "common.BinarySearchMain" has no MetaData or annotations.
+13:51:06,231 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$BlockRecord" has no MetaData or annotations.
+13:51:06,232 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$DataTransfer" has no MetaData or annotations.
+13:51:06,234 (main) ERROR [DataNucleus.MetaData] - Class "common.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,235 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest$1" has no MetaData or annotations.
+13:51:06,236 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest" has no MetaData or annotations.
+13:51:06,236 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest$Scope" has no MetaData or annotations.
+13:51:06,237 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest" has no MetaData or annotations.
+13:51:06,238 (main) ERROR [DataNucleus.MetaData] - Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,239 (main) INFO  [DataNucleus.MetaData] - Class "common.PID" has no MetaData or annotations.
+13:51:06,240 (main) INFO  [DataNucleus.MetaData] - Class "common.PathTest" has no MetaData or annotations.
+13:51:06,240 (main) INFO  [DataNucleus.MetaData] - Class "common.Test" has no MetaData or annotations.
+13:51:06,241 (main) INFO  [DataNucleus.MetaData] - Class "common.TestGSBHA" has no MetaData or annotations.
+13:51:06,242 (main) INFO  [DataNucleus.MetaData] - Class "common.TimeTest" has no MetaData or annotations.
+13:51:06,244 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$BlockRecord" has no MetaData or annotations.
+13:51:06,245 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$DataTransfer" has no MetaData or annotations.
+13:51:06,245 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,246 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.Main" has no MetaData or annotations.
+13:51:06,247 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,248 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNodeZookeeperProxy" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNodeZookeeperProxy" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,248 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$EmptySplit" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$EmptySplit" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,249 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,250 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepJobPartitioner" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepJobPartitioner" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,250 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,251 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,252 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,253 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHBase" has no MetaData or annotations.
+13:51:06,253 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHadoopMiniCluster" has no MetaData or annotations.
+13:51:06,254 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestMRCluster" has no MetaData or annotations.
+13:51:06,255 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.ZookeeperSupport" has no MetaData or annotations.
+13:51:06,257 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.file.FileTest" has no MetaData or annotations.
+13:51:06,258 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.hive.HiveDBConnTest" has no MetaData or annotations.
+13:51:06,259 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.hive.LogGenerator" has no MetaData or annotations.
+13:51:06,260 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.lzo.LZOLocalWriter$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,260 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.lzo.LZOLocalWriter$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,262 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter" has no MetaData or annotations.
+13:51:06,263 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOUploader" has no MetaData or annotations.
+13:51:06,264 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LogCreator" has no MetaData or annotations.
+13:51:06,264 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LzopTest" has no MetaData or annotations.
+13:51:06,266 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CacheFileReader" has no MetaData or annotations.
+13:51:06,267 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.CompressedLineReader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.CompressedLineReader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,267 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.OffsetSplitsPair" has no MetaData or annotations.
+13:51:06,268 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,269 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipReadLineInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipReadLineInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,269 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipSizeMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,270 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipSizeMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,271 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce" has no MetaData or annotations.
+13:51:06,271 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,272 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,272 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce" has no MetaData or annotations.
+13:51:06,274 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.ByteArrayToCharBufferAndString" has no MetaData or annotations.
+13:51:06,275 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.tail.Tailer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.tail.Tailer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,275 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.TestAddFile" has no MetaData or annotations.
+13:51:06,277 (main) INFO  [DataNucleus.MetaData] - Class "ip.ACE_NAT_ADDRESS" has no MetaData or annotations.
+13:51:06,278 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoStore" has no MetaData or annotations.
+13:51:06,279 (main) INFO  [DataNucleus.MetaData] - Class "magick.ClassType" has no MetaData or annotations.
+13:51:06,279 (main) INFO  [DataNucleus.MetaData] - Class "magick.ColorspaceType" has no MetaData or annotations.
+13:51:06,279 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompositeOperator" has no MetaData or annotations.
+13:51:06,279 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompressionType" has no MetaData or annotations.
+13:51:06,280 (main) INFO  [DataNucleus.MetaData] - Class "magick.DecorationType" has no MetaData or annotations.
+13:51:06,281 (main) INFO  [DataNucleus.MetaData] - Class "magick.DrawInfo" has no MetaData or annotations.
+13:51:06,282 (main) INFO  [DataNucleus.MetaData] - Class "magick.ExceptionType" has no MetaData or annotations.
+13:51:06,282 (main) INFO  [DataNucleus.MetaData] - Class "magick.FilterType" has no MetaData or annotations.
+13:51:06,282 (main) INFO  [DataNucleus.MetaData] - Class "magick.GeometryFlags" has no MetaData or annotations.
+13:51:06,282 (main) INFO  [DataNucleus.MetaData] - Class "magick.GravityType" has no MetaData or annotations.
+13:51:06,283 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageInfo" has no MetaData or annotations.
+13:51:06,284 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageMagick" has no MetaData or annotations.
+13:51:06,284 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageType" has no MetaData or annotations.
+13:51:06,284 (main) INFO  [DataNucleus.MetaData] - Class "magick.InterlaceType" has no MetaData or annotations.
+13:51:06,285 (main) INFO  [DataNucleus.MetaData] - Class "magick.Magick" has no MetaData or annotations.
+13:51:06,286 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickApiException" has no MetaData or annotations.
+13:51:06,286 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickException" has no MetaData or annotations.
+13:51:06,287 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickImage" has no MetaData or annotations.
+13:51:06,288 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickInfo" has no MetaData or annotations.
+13:51:06,288 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickLoader" has no MetaData or annotations.
+13:51:06,289 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickProducer" has no MetaData or annotations.
+13:51:06,290 (main) INFO  [DataNucleus.MetaData] - Class "magick.MapMode" has no MetaData or annotations.
+13:51:06,290 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageInfo" has no MetaData or annotations.
+13:51:06,291 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageMode" has no MetaData or annotations.
+13:51:06,291 (main) INFO  [DataNucleus.MetaData] - Class "magick.NoiseType" has no MetaData or annotations.
+13:51:06,291 (main) INFO  [DataNucleus.MetaData] - Class "magick.PaintMethod" has no MetaData or annotations.
+13:51:06,292 (main) INFO  [DataNucleus.MetaData] - Class "magick.PixelPacket" has no MetaData or annotations.
+13:51:06,292 (main) INFO  [DataNucleus.MetaData] - Class "magick.PreviewType" has no MetaData or annotations.
+13:51:06,292 (main) INFO  [DataNucleus.MetaData] - Class "magick.PrimitiveType" has no MetaData or annotations.
+13:51:06,293 (main) INFO  [DataNucleus.MetaData] - Class "magick.ProfileInfo" has no MetaData or annotations.
+13:51:06,294 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantizeInfo" has no MetaData or annotations.
+13:51:06,294 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantumTypes" has no MetaData or annotations.
+13:51:06,294 (main) INFO  [DataNucleus.MetaData] - Class "magick.RenderingIntent" has no MetaData or annotations.
+13:51:06,295 (main) INFO  [DataNucleus.MetaData] - Class "magick.ResolutionType" has no MetaData or annotations.
+13:51:06,295 (main) INFO  [DataNucleus.MetaData] - Class "magick.StorageType" has no MetaData or annotations.
+13:51:06,295 (main) INFO  [DataNucleus.MetaData] - Class "magick.TimerState" has no MetaData or annotations.
+13:51:06,297 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.DisplayImageMetaData" has no MetaData or annotations.
+13:51:06,298 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas$ImageNotification" has no MetaData or annotations.
+13:51:06,300 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas" has no MetaData or annotations.
+13:51:06,301 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickViewer" has no MetaData or annotations.
+13:51:06,302 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow$MyListener" has no MetaData or annotations.
+13:51:06,304 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow" has no MetaData or annotations.
+13:51:06,305 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Basic" has no MetaData or annotations.
+13:51:06,306 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Tracer" has no MetaData or annotations.
+13:51:06,307 (main) INFO  [DataNucleus.MetaData] - Class "nfs.NfsNIOLock" has no MetaData or annotations.
+13:51:06,308 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,309 (main) INFO  [DataNucleus.MetaData] - Class "preview.OpenofficeDoc2Pdf" has no MetaData or annotations.
+13:51:06,310 (main) ERROR [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentFileUploader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "realtime.hadoop.ConcurrentFileUploader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:51:06,312 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentReader" has no MetaData or annotations.
+13:51:06,312 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentWriterReader" has no MetaData or annotations.
+13:51:06,380 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mac/workspace/mac-test/target/classes/jdo/bean/UserBean.class" with enhanced definition
+13:51:06,381 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=352 ms, enhance=68 ms, total=420 ms. Consult the log for full details
+13:55:08,439 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+13:55:08,693 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.core.resources" but it cannot be resolved.
+13:55:08,693 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.core.runtime" but it cannot be resolved.
+13:55:08,693 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.text" but it cannot be resolved.
+13:55:08,764 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.0.3) : Enhancement of classes
+13:55:08,949 (main) WARN  [DataNucleus.MetaData] - MetaData Parser encountered an error in file "file:/home/mac/workspace/mac-test/src/main/java/jdo/package.jdo" at line 11, column 6 : cvc-elt.1: Cannot find the declaration of element 'jdo'. - Please check your specification of DTD and the validity of the MetaData XML that you have specified.
+13:55:08,979 (main) WARN  [DataNucleus.MetaData] - MetaData Parser encountered an error in file "file:/home/mac/workspace/mac-test/target/classes/jdo/package.jdo" at line 11, column 6 : cvc-elt.1: Cannot find the declaration of element 'jdo'. - Please check your specification of DTD and the validity of the MetaData XML that you have specified.
+13:55:09,021 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+13:55:09,026 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+13:55:09,061 (main) INFO  [DataNucleus.MetaData] - Class "classloader.CostomizedClassLoader" has no MetaData or annotations.
+13:55:09,062 (main) INFO  [DataNucleus.MetaData] - Class "classloader.MainTestList" has no MetaData or annotations.
+13:55:09,064 (main) INFO  [DataNucleus.MetaData] - Class "common.ArrayListToArray" has no MetaData or annotations.
+13:55:09,064 (main) INFO  [DataNucleus.MetaData] - Class "common.BinarySearchMain" has no MetaData or annotations.
+13:55:09,065 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$BlockRecord" has no MetaData or annotations.
+13:55:09,066 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$DataTransfer" has no MetaData or annotations.
+13:55:09,068 (main) ERROR [DataNucleus.MetaData] - Class "common.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,068 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest$1" has no MetaData or annotations.
+13:55:09,069 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest" has no MetaData or annotations.
+13:55:09,070 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest$Scope" has no MetaData or annotations.
+13:55:09,071 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest" has no MetaData or annotations.
+13:55:09,072 (main) ERROR [DataNucleus.MetaData] - Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,072 (main) INFO  [DataNucleus.MetaData] - Class "common.PID" has no MetaData or annotations.
+13:55:09,073 (main) INFO  [DataNucleus.MetaData] - Class "common.PathTest" has no MetaData or annotations.
+13:55:09,074 (main) INFO  [DataNucleus.MetaData] - Class "common.Test" has no MetaData or annotations.
+13:55:09,074 (main) INFO  [DataNucleus.MetaData] - Class "common.TestGSBHA" has no MetaData or annotations.
+13:55:09,075 (main) INFO  [DataNucleus.MetaData] - Class "common.TimeTest" has no MetaData or annotations.
+13:55:09,077 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$BlockRecord" has no MetaData or annotations.
+13:55:09,077 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$DataTransfer" has no MetaData or annotations.
+13:55:09,078 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,079 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.Main" has no MetaData or annotations.
+13:55:09,079 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,080 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNodeZookeeperProxy" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNodeZookeeperProxy" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,081 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$EmptySplit" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$EmptySplit" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,081 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,082 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepJobPartitioner" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepJobPartitioner" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,082 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,083 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,083 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,084 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHBase" has no MetaData or annotations.
+13:55:09,085 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHadoopMiniCluster" has no MetaData or annotations.
+13:55:09,086 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestMRCluster" has no MetaData or annotations.
+13:55:09,086 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.ZookeeperSupport" has no MetaData or annotations.
+13:55:09,088 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.file.FileTest" has no MetaData or annotations.
+13:55:09,089 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.hive.HiveDBConnTest" has no MetaData or annotations.
+13:55:09,090 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.hive.LogGenerator" has no MetaData or annotations.
+13:55:09,091 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.lzo.LZOLocalWriter$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,091 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.lzo.LZOLocalWriter$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,093 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter" has no MetaData or annotations.
+13:55:09,093 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOUploader" has no MetaData or annotations.
+13:55:09,094 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LogCreator" has no MetaData or annotations.
+13:55:09,095 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LzopTest" has no MetaData or annotations.
+13:55:09,096 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CacheFileReader" has no MetaData or annotations.
+13:55:09,097 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.CompressedLineReader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.CompressedLineReader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,097 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.OffsetSplitsPair" has no MetaData or annotations.
+13:55:09,098 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,099 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipReadLineInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipReadLineInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,099 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipSizeMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,100 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipSizeMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,101 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce" has no MetaData or annotations.
+13:55:09,101 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,102 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,103 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce" has no MetaData or annotations.
+13:55:09,104 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.ByteArrayToCharBufferAndString" has no MetaData or annotations.
+13:55:09,105 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.tail.Tailer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.tail.Tailer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,105 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.TestAddFile" has no MetaData or annotations.
+13:55:09,107 (main) INFO  [DataNucleus.MetaData] - Class "ip.ACE_NAT_ADDRESS" has no MetaData or annotations.
+13:55:09,108 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoStore" has no MetaData or annotations.
+13:55:09,109 (main) INFO  [DataNucleus.MetaData] - Class "magick.ClassType" has no MetaData or annotations.
+13:55:09,109 (main) INFO  [DataNucleus.MetaData] - Class "magick.ColorspaceType" has no MetaData or annotations.
+13:55:09,109 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompositeOperator" has no MetaData or annotations.
+13:55:09,109 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompressionType" has no MetaData or annotations.
+13:55:09,110 (main) INFO  [DataNucleus.MetaData] - Class "magick.DecorationType" has no MetaData or annotations.
+13:55:09,111 (main) INFO  [DataNucleus.MetaData] - Class "magick.DrawInfo" has no MetaData or annotations.
+13:55:09,112 (main) INFO  [DataNucleus.MetaData] - Class "magick.ExceptionType" has no MetaData or annotations.
+13:55:09,112 (main) INFO  [DataNucleus.MetaData] - Class "magick.FilterType" has no MetaData or annotations.
+13:55:09,112 (main) INFO  [DataNucleus.MetaData] - Class "magick.GeometryFlags" has no MetaData or annotations.
+13:55:09,112 (main) INFO  [DataNucleus.MetaData] - Class "magick.GravityType" has no MetaData or annotations.
+13:55:09,113 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageInfo" has no MetaData or annotations.
+13:55:09,114 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageMagick" has no MetaData or annotations.
+13:55:09,114 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageType" has no MetaData or annotations.
+13:55:09,114 (main) INFO  [DataNucleus.MetaData] - Class "magick.InterlaceType" has no MetaData or annotations.
+13:55:09,115 (main) INFO  [DataNucleus.MetaData] - Class "magick.Magick" has no MetaData or annotations.
+13:55:09,116 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickApiException" has no MetaData or annotations.
+13:55:09,116 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickException" has no MetaData or annotations.
+13:55:09,117 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickImage" has no MetaData or annotations.
+13:55:09,118 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickInfo" has no MetaData or annotations.
+13:55:09,118 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickLoader" has no MetaData or annotations.
+13:55:09,119 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickProducer" has no MetaData or annotations.
+13:55:09,119 (main) INFO  [DataNucleus.MetaData] - Class "magick.MapMode" has no MetaData or annotations.
+13:55:09,120 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageInfo" has no MetaData or annotations.
+13:55:09,120 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageMode" has no MetaData or annotations.
+13:55:09,121 (main) INFO  [DataNucleus.MetaData] - Class "magick.NoiseType" has no MetaData or annotations.
+13:55:09,121 (main) INFO  [DataNucleus.MetaData] - Class "magick.PaintMethod" has no MetaData or annotations.
+13:55:09,122 (main) INFO  [DataNucleus.MetaData] - Class "magick.PixelPacket" has no MetaData or annotations.
+13:55:09,122 (main) INFO  [DataNucleus.MetaData] - Class "magick.PreviewType" has no MetaData or annotations.
+13:55:09,122 (main) INFO  [DataNucleus.MetaData] - Class "magick.PrimitiveType" has no MetaData or annotations.
+13:55:09,123 (main) INFO  [DataNucleus.MetaData] - Class "magick.ProfileInfo" has no MetaData or annotations.
+13:55:09,123 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantizeInfo" has no MetaData or annotations.
+13:55:09,124 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantumTypes" has no MetaData or annotations.
+13:55:09,124 (main) INFO  [DataNucleus.MetaData] - Class "magick.RenderingIntent" has no MetaData or annotations.
+13:55:09,124 (main) INFO  [DataNucleus.MetaData] - Class "magick.ResolutionType" has no MetaData or annotations.
+13:55:09,125 (main) INFO  [DataNucleus.MetaData] - Class "magick.StorageType" has no MetaData or annotations.
+13:55:09,125 (main) INFO  [DataNucleus.MetaData] - Class "magick.TimerState" has no MetaData or annotations.
+13:55:09,126 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.DisplayImageMetaData" has no MetaData or annotations.
+13:55:09,127 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas$ImageNotification" has no MetaData or annotations.
+13:55:09,129 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas" has no MetaData or annotations.
+13:55:09,131 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickViewer" has no MetaData or annotations.
+13:55:09,132 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow$MyListener" has no MetaData or annotations.
+13:55:09,133 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow" has no MetaData or annotations.
+13:55:09,135 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Basic" has no MetaData or annotations.
+13:55:09,135 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Tracer" has no MetaData or annotations.
+13:55:09,137 (main) INFO  [DataNucleus.MetaData] - Class "nfs.NfsNIOLock" has no MetaData or annotations.
+13:55:09,137 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,138 (main) INFO  [DataNucleus.MetaData] - Class "preview.OpenofficeDoc2Pdf" has no MetaData or annotations.
+13:55:09,139 (main) ERROR [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentFileUploader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "realtime.hadoop.ConcurrentFileUploader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+13:55:09,141 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentReader" has no MetaData or annotations.
+13:55:09,145 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentWriterReader" has no MetaData or annotations.
+13:55:09,210 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mac/workspace/mac-test/target/classes/jdo/bean/UserBean.class" with enhanced definition
+13:55:09,210 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=376 ms, enhance=65 ms, total=441 ms. Consult the log for full details
+14:53:07,469 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+14:53:07,727 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.core.resources" but it cannot be resolved.
+14:53:07,727 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.core.runtime" but it cannot be resolved.
+14:53:07,727 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.text" but it cannot be resolved.
+14:53:07,800 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.0.3) : Enhancement of classes
+14:53:07,986 (main) WARN  [DataNucleus.MetaData] - MetaData Parser encountered an error in file "file:/home/mac/workspace/mac-test/src/main/java/jdo/package.jdo" at line 11, column 6 : cvc-elt.1: Cannot find the declaration of element 'jdo'. - Please check your specification of DTD and the validity of the MetaData XML that you have specified.
+14:53:08,016 (main) WARN  [DataNucleus.MetaData] - MetaData Parser encountered an error in file "file:/home/mac/workspace/mac-test/target/classes/jdo/package.jdo" at line 11, column 6 : cvc-elt.1: Cannot find the declaration of element 'jdo'. - Please check your specification of DTD and the validity of the MetaData XML that you have specified.
+14:53:08,060 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+14:53:08,065 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+14:53:08,102 (main) INFO  [DataNucleus.MetaData] - Class "classloader.CostomizedClassLoader" has no MetaData or annotations.
+14:53:08,102 (main) INFO  [DataNucleus.MetaData] - Class "classloader.MainTestList" has no MetaData or annotations.
+14:53:08,104 (main) INFO  [DataNucleus.MetaData] - Class "common.ArrayListToArray" has no MetaData or annotations.
+14:53:08,105 (main) INFO  [DataNucleus.MetaData] - Class "common.BinarySearchMain" has no MetaData or annotations.
+14:53:08,105 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$BlockRecord" has no MetaData or annotations.
+14:53:08,106 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$DataTransfer" has no MetaData or annotations.
+14:53:08,108 (main) ERROR [DataNucleus.MetaData] - Class "common.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,109 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest$1" has no MetaData or annotations.
+14:53:08,110 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest" has no MetaData or annotations.
+14:53:08,110 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest$Scope" has no MetaData or annotations.
+14:53:08,111 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest" has no MetaData or annotations.
+14:53:08,112 (main) ERROR [DataNucleus.MetaData] - Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,113 (main) INFO  [DataNucleus.MetaData] - Class "common.PID" has no MetaData or annotations.
+14:53:08,113 (main) INFO  [DataNucleus.MetaData] - Class "common.PathTest" has no MetaData or annotations.
+14:53:08,114 (main) INFO  [DataNucleus.MetaData] - Class "common.Test" has no MetaData or annotations.
+14:53:08,115 (main) INFO  [DataNucleus.MetaData] - Class "common.TestGSBHA" has no MetaData or annotations.
+14:53:08,116 (main) INFO  [DataNucleus.MetaData] - Class "common.TimeTest" has no MetaData or annotations.
+14:53:08,117 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$BlockRecord" has no MetaData or annotations.
+14:53:08,118 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$DataTransfer" has no MetaData or annotations.
+14:53:08,118 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.DataNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,119 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.Main" has no MetaData or annotations.
+14:53:08,120 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,120 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNodeZookeeperProxy" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNodeZookeeperProxy" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,121 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$EmptySplit" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$EmptySplit" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,121 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,122 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepJobPartitioner" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepJobPartitioner" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,123 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,123 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob$SleepReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,124 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.SleepJob" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.SleepJob" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,125 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHBase" has no MetaData or annotations.
+14:53:08,125 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHadoopMiniCluster" has no MetaData or annotations.
+14:53:08,126 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestMRCluster" has no MetaData or annotations.
+14:53:08,127 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.ZookeeperSupport" has no MetaData or annotations.
+14:53:08,128 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.file.FileTest" has no MetaData or annotations.
+14:53:08,130 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.hive.HiveDBConnTest" has no MetaData or annotations.
+14:53:08,130 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.hive.LogGenerator" has no MetaData or annotations.
+14:53:08,131 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.lzo.LZOLocalWriter$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,131 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.lzo.LZOLocalWriter$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,133 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter" has no MetaData or annotations.
+14:53:08,134 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOUploader" has no MetaData or annotations.
+14:53:08,134 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LogCreator" has no MetaData or annotations.
+14:53:08,135 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LzopTest" has no MetaData or annotations.
+14:53:08,136 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CacheFileReader" has no MetaData or annotations.
+14:53:08,137 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.CompressedLineReader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.CompressedLineReader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,138 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.OffsetSplitsPair" has no MetaData or annotations.
+14:53:08,139 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,139 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipReadLineInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipReadLineInputFormat" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,140 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipSizeMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,140 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkipSizeMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,141 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce" has no MetaData or annotations.
+14:53:08,142 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,142 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,143 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce" has no MetaData or annotations.
+14:53:08,145 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.ByteArrayToCharBufferAndString" has no MetaData or annotations.
+14:53:08,145 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.tail.Tailer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.tail.Tailer" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,146 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.TestAddFile" has no MetaData or annotations.
+14:53:08,147 (main) INFO  [DataNucleus.MetaData] - Class "ip.ACE_NAT_ADDRESS" has no MetaData or annotations.
+14:53:08,149 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoHBaseStore" has no MetaData or annotations.
+14:53:08,149 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoStore" has no MetaData or annotations.
+14:53:08,150 (main) INFO  [DataNucleus.MetaData] - Class "magick.ClassType" has no MetaData or annotations.
+14:53:08,150 (main) INFO  [DataNucleus.MetaData] - Class "magick.ColorspaceType" has no MetaData or annotations.
+14:53:08,150 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompositeOperator" has no MetaData or annotations.
+14:53:08,151 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompressionType" has no MetaData or annotations.
+14:53:08,151 (main) INFO  [DataNucleus.MetaData] - Class "magick.DecorationType" has no MetaData or annotations.
+14:53:08,152 (main) INFO  [DataNucleus.MetaData] - Class "magick.DrawInfo" has no MetaData or annotations.
+14:53:08,153 (main) INFO  [DataNucleus.MetaData] - Class "magick.ExceptionType" has no MetaData or annotations.
+14:53:08,153 (main) INFO  [DataNucleus.MetaData] - Class "magick.FilterType" has no MetaData or annotations.
+14:53:08,153 (main) INFO  [DataNucleus.MetaData] - Class "magick.GeometryFlags" has no MetaData or annotations.
+14:53:08,153 (main) INFO  [DataNucleus.MetaData] - Class "magick.GravityType" has no MetaData or annotations.
+14:53:08,154 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageInfo" has no MetaData or annotations.
+14:53:08,155 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageMagick" has no MetaData or annotations.
+14:53:08,155 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageType" has no MetaData or annotations.
+14:53:08,155 (main) INFO  [DataNucleus.MetaData] - Class "magick.InterlaceType" has no MetaData or annotations.
+14:53:08,156 (main) INFO  [DataNucleus.MetaData] - Class "magick.Magick" has no MetaData or annotations.
+14:53:08,157 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickApiException" has no MetaData or annotations.
+14:53:08,157 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickException" has no MetaData or annotations.
+14:53:08,158 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickImage" has no MetaData or annotations.
+14:53:08,159 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickInfo" has no MetaData or annotations.
+14:53:08,159 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickLoader" has no MetaData or annotations.
+14:53:08,160 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickProducer" has no MetaData or annotations.
+14:53:08,160 (main) INFO  [DataNucleus.MetaData] - Class "magick.MapMode" has no MetaData or annotations.
+14:53:08,161 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageInfo" has no MetaData or annotations.
+14:53:08,161 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageMode" has no MetaData or annotations.
+14:53:08,162 (main) INFO  [DataNucleus.MetaData] - Class "magick.NoiseType" has no MetaData or annotations.
+14:53:08,162 (main) INFO  [DataNucleus.MetaData] - Class "magick.PaintMethod" has no MetaData or annotations.
+14:53:08,163 (main) INFO  [DataNucleus.MetaData] - Class "magick.PixelPacket" has no MetaData or annotations.
+14:53:08,163 (main) INFO  [DataNucleus.MetaData] - Class "magick.PreviewType" has no MetaData or annotations.
+14:53:08,163 (main) INFO  [DataNucleus.MetaData] - Class "magick.PrimitiveType" has no MetaData or annotations.
+14:53:08,164 (main) INFO  [DataNucleus.MetaData] - Class "magick.ProfileInfo" has no MetaData or annotations.
+14:53:08,165 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantizeInfo" has no MetaData or annotations.
+14:53:08,165 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantumTypes" has no MetaData or annotations.
+14:53:08,165 (main) INFO  [DataNucleus.MetaData] - Class "magick.RenderingIntent" has no MetaData or annotations.
+14:53:08,165 (main) INFO  [DataNucleus.MetaData] - Class "magick.ResolutionType" has no MetaData or annotations.
+14:53:08,166 (main) INFO  [DataNucleus.MetaData] - Class "magick.StorageType" has no MetaData or annotations.
+14:53:08,166 (main) INFO  [DataNucleus.MetaData] - Class "magick.TimerState" has no MetaData or annotations.
+14:53:08,167 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.DisplayImageMetaData" has no MetaData or annotations.
+14:53:08,168 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas$ImageNotification" has no MetaData or annotations.
+14:53:08,170 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas" has no MetaData or annotations.
+14:53:08,172 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickViewer" has no MetaData or annotations.
+14:53:08,173 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow$MyListener" has no MetaData or annotations.
+14:53:08,174 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow" has no MetaData or annotations.
+14:53:08,176 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Basic" has no MetaData or annotations.
+14:53:08,176 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Tracer" has no MetaData or annotations.
+14:53:08,178 (main) INFO  [DataNucleus.MetaData] - Class "nfs.NfsNIOLock" has no MetaData or annotations.
+14:53:08,178 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,180 (main) INFO  [DataNucleus.MetaData] - Class "preview.OpenofficeDoc2Pdf" has no MetaData or annotations.
+14:53:08,180 (main) ERROR [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentFileUploader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "realtime.hadoop.ConcurrentFileUploader" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+14:53:08,187 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentReader" has no MetaData or annotations.
+14:53:08,190 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentWriterReader" has no MetaData or annotations.
+14:53:08,255 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mac/workspace/mac-test/target/classes/jdo/bean/UserBean.class" with enhanced definition
+14:53:08,256 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=386 ms, enhance=66 ms, total=452 ms. Consult the log for full details
+17:40:23,622 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+17:40:23,882 (main) ERROR [DataNucleus.Plugin] - Bundle "org.datanucleus.store.hbase" requires "org.datanucleus" version "3.0.1" but the resolved bundle has version "3.0.1" which is outside the expected range.
+17:40:23,882 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.core.resources" but it cannot be resolved.
+17:40:23,882 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.core.runtime" but it cannot be resolved.
+17:40:23,882 (main) ERROR [DataNucleus.Plugin] - Bundle "org.eclipse.jdt.core" requires "org.eclipse.text" but it cannot be resolved.
+17:40:23,965 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.0.3) : Enhancement of classes
+17:40:24,150 (main) WARN  [DataNucleus.MetaData] - MetaData Parser encountered an error in file "file:/home/mac/workspace/mac-test/src/main/java/jdo/package.jdo" at line 11, column 6 : cvc-elt.1: Cannot find the declaration of element 'jdo'. - Please check your specification of DTD and the validity of the MetaData XML that you have specified.
+17:40:24,185 (main) WARN  [DataNucleus.MetaData] - MetaData Parser encountered an error in file "file:/home/mac/workspace/mac-test/target/classes/jdo/package.jdo" at line 11, column 6 : cvc-elt.1: Cannot find the declaration of element 'jdo'. - Please check your specification of DTD and the validity of the MetaData XML that you have specified.
+17:40:24,236 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+17:40:24,242 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+17:40:24,276 (main) INFO  [DataNucleus.MetaData] - Class "classloader.CostomizedClassLoader" has no MetaData or annotations.
+17:40:24,277 (main) INFO  [DataNucleus.MetaData] - Class "classloader.MainTestList" has no MetaData or annotations.
+17:40:24,279 (main) INFO  [DataNucleus.MetaData] - Class "common.ArrayListToArray" has no MetaData or annotations.
+17:40:24,280 (main) INFO  [DataNucleus.MetaData] - Class "common.BinarySearchMain" has no MetaData or annotations.
+17:40:24,282 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$BlockRecord" has no MetaData or annotations.
+17:40:24,283 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$DataTransfer" has no MetaData or annotations.
+17:40:24,287 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode" has no MetaData or annotations.
+17:40:24,288 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest$1" has no MetaData or annotations.
+17:40:24,289 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest" has no MetaData or annotations.
+17:40:24,290 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest$Scope" has no MetaData or annotations.
+17:40:24,291 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest" has no MetaData or annotations.
+17:40:24,293 (main) ERROR [DataNucleus.MetaData] - Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+17:40:24,294 (main) INFO  [DataNucleus.MetaData] - Class "common.PID" has no MetaData or annotations.
+17:40:24,295 (main) INFO  [DataNucleus.MetaData] - Class "common.PathTest" has no MetaData or annotations.
+17:40:24,296 (main) INFO  [DataNucleus.MetaData] - Class "common.Test" has no MetaData or annotations.
+17:40:24,297 (main) INFO  [DataNucleus.MetaData] - Class "common.TestGSBHA" has no MetaData or annotations.
+17:40:24,298 (main) INFO  [DataNucleus.MetaData] - Class "common.TimeTest" has no MetaData or annotations.
+17:40:24,301 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$BlockRecord" has no MetaData or annotations.
+17:40:24,302 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$DataTransfer" has no MetaData or annotations.
+17:40:24,303 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode" has no MetaData or annotations.
+17:40:24,304 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.Main" has no MetaData or annotations.
+17:40:24,305 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+17:40:24,307 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.NameNodeZookeeperProxy" has no MetaData or annotations.
+17:40:24,309 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$EmptySplit" has no MetaData or annotations.
+17:40:24,310 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepInputFormat" has no MetaData or annotations.
+17:40:24,311 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepJobPartitioner" has no MetaData or annotations.
+17:40:24,312 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepMapper" has no MetaData or annotations.
+17:40:24,313 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepReducer" has no MetaData or annotations.
+17:40:24,315 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob" has no MetaData or annotations.
+17:40:24,316 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHadoopMiniCluster" has no MetaData or annotations.
+17:40:24,316 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestMRCluster" has no MetaData or annotations.
+17:40:24,317 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.ZookeeperSupport" has no MetaData or annotations.
+17:40:24,319 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.file.FileTest" has no MetaData or annotations.
+17:40:24,321 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestMapper" has no MetaData or annotations.
+17:40:24,322 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestReducer" has no MetaData or annotations.
+17:40:24,323 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter" has no MetaData or annotations.
+17:40:24,324 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOUploader" has no MetaData or annotations.
+17:40:24,325 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LogCreator" has no MetaData or annotations.
+17:40:24,325 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LzopTest" has no MetaData or annotations.
+17:40:24,327 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CacheFileReader" has no MetaData or annotations.
+17:40:24,329 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CompressedLineReader" has no MetaData or annotations.
+17:40:24,330 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.OffsetSplitsPair" has no MetaData or annotations.
+17:40:24,331 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipInputFormat" has no MetaData or annotations.
+17:40:24,332 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipReadLineInputFormat" has no MetaData or annotations.
+17:40:24,337 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestMapper" has no MetaData or annotations.
+17:40:24,338 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestReducer" has no MetaData or annotations.
+17:40:24,339 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce" has no MetaData or annotations.
+17:40:24,340 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" has no MetaData or annotations.
+17:40:24,341 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" has no MetaData or annotations.
+17:40:24,342 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce" has no MetaData or annotations.
+17:40:24,344 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.ByteArrayToCharBufferAndString" has no MetaData or annotations.
+17:40:24,344 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.Tailer" has no MetaData or annotations.
+17:40:24,345 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.TestAddFile" has no MetaData or annotations.
+17:40:24,347 (main) INFO  [DataNucleus.MetaData] - Class "hbase.TestHBase" has no MetaData or annotations.
+17:40:24,349 (main) INFO  [DataNucleus.MetaData] - Class "hive.HiveDBConnTest" has no MetaData or annotations.
+17:40:24,350 (main) INFO  [DataNucleus.MetaData] - Class "hive.LogGenerator" has no MetaData or annotations.
+17:40:24,351 (main) INFO  [DataNucleus.MetaData] - Class "ip.ACE_NAT_ADDRESS" has no MetaData or annotations.
+17:40:24,353 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoHBaseStore" has no MetaData or annotations.
+17:40:24,354 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoStore" has no MetaData or annotations.
+17:40:24,355 (main) INFO  [DataNucleus.MetaData] - Class "magick.ClassType" has no MetaData or annotations.
+17:40:24,355 (main) INFO  [DataNucleus.MetaData] - Class "magick.ColorspaceType" has no MetaData or annotations.
+17:40:24,355 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompositeOperator" has no MetaData or annotations.
+17:40:24,356 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompressionType" has no MetaData or annotations.
+17:40:24,356 (main) INFO  [DataNucleus.MetaData] - Class "magick.DecorationType" has no MetaData or annotations.
+17:40:24,358 (main) INFO  [DataNucleus.MetaData] - Class "magick.DrawInfo" has no MetaData or annotations.
+17:40:24,358 (main) INFO  [DataNucleus.MetaData] - Class "magick.ExceptionType" has no MetaData or annotations.
+17:40:24,359 (main) INFO  [DataNucleus.MetaData] - Class "magick.FilterType" has no MetaData or annotations.
+17:40:24,359 (main) INFO  [DataNucleus.MetaData] - Class "magick.GeometryFlags" has no MetaData or annotations.
+17:40:24,359 (main) INFO  [DataNucleus.MetaData] - Class "magick.GravityType" has no MetaData or annotations.
+17:40:24,360 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageInfo" has no MetaData or annotations.
+17:40:24,361 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageMagick" has no MetaData or annotations.
+17:40:24,361 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageType" has no MetaData or annotations.
+17:40:24,362 (main) INFO  [DataNucleus.MetaData] - Class "magick.InterlaceType" has no MetaData or annotations.
+17:40:24,362 (main) INFO  [DataNucleus.MetaData] - Class "magick.Magick" has no MetaData or annotations.
+17:40:24,363 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickApiException" has no MetaData or annotations.
+17:40:24,364 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickException" has no MetaData or annotations.
+17:40:24,365 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickImage" has no MetaData or annotations.
+17:40:24,366 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickInfo" has no MetaData or annotations.
+17:40:24,367 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickLoader" has no MetaData or annotations.
+17:40:24,369 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickProducer" has no MetaData or annotations.
+17:40:24,369 (main) INFO  [DataNucleus.MetaData] - Class "magick.MapMode" has no MetaData or annotations.
+17:40:24,370 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageInfo" has no MetaData or annotations.
+17:40:24,370 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageMode" has no MetaData or annotations.
+17:40:24,370 (main) INFO  [DataNucleus.MetaData] - Class "magick.NoiseType" has no MetaData or annotations.
+17:40:24,371 (main) INFO  [DataNucleus.MetaData] - Class "magick.PaintMethod" has no MetaData or annotations.
+17:40:24,372 (main) INFO  [DataNucleus.MetaData] - Class "magick.PixelPacket" has no MetaData or annotations.
+17:40:24,372 (main) INFO  [DataNucleus.MetaData] - Class "magick.PreviewType" has no MetaData or annotations.
+17:40:24,372 (main) INFO  [DataNucleus.MetaData] - Class "magick.PrimitiveType" has no MetaData or annotations.
+17:40:24,373 (main) INFO  [DataNucleus.MetaData] - Class "magick.ProfileInfo" has no MetaData or annotations.
+17:40:24,374 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantizeInfo" has no MetaData or annotations.
+17:40:24,374 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantumTypes" has no MetaData or annotations.
+17:40:24,375 (main) INFO  [DataNucleus.MetaData] - Class "magick.RenderingIntent" has no MetaData or annotations.
+17:40:24,375 (main) INFO  [DataNucleus.MetaData] - Class "magick.ResolutionType" has no MetaData or annotations.
+17:40:24,375 (main) INFO  [DataNucleus.MetaData] - Class "magick.StorageType" has no MetaData or annotations.
+17:40:24,375 (main) INFO  [DataNucleus.MetaData] - Class "magick.TimerState" has no MetaData or annotations.
+17:40:24,377 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.DisplayImageMetaData" has no MetaData or annotations.
+17:40:24,378 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas$ImageNotification" has no MetaData or annotations.
+17:40:24,381 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas" has no MetaData or annotations.
+17:40:24,383 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickViewer" has no MetaData or annotations.
+17:40:24,384 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow$MyListener" has no MetaData or annotations.
+17:40:24,385 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow" has no MetaData or annotations.
+17:40:24,387 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Basic" has no MetaData or annotations.
+17:40:24,388 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Tracer" has no MetaData or annotations.
+17:40:24,390 (main) INFO  [DataNucleus.MetaData] - Class "nfs.NfsNIOLock" has no MetaData or annotations.
+17:40:24,407 (main) INFO  [DataNucleus.MetaData] - Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" has no MetaData or annotations.
+17:40:24,409 (main) INFO  [DataNucleus.MetaData] - Class "preview.OpenofficeDoc2Pdf" has no MetaData or annotations.
+17:40:24,412 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentFileUploader" has no MetaData or annotations.
+17:40:24,413 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentReader" has no MetaData or annotations.
+17:40:24,414 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentWriterReader" has no MetaData or annotations.
+17:40:24,482 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mac/workspace/mac-test/target/classes/jdo/bean/UserBean.class" with enhanced definition
+17:40:24,483 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=442 ms, enhance=69 ms, total=511 ms. Consult the log for full details
+17:55:58,739 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+17:55:59,040 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.0.release) : Enhancement of classes
+17:55:59,184 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+17:55:59,190 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+17:55:59,240 (main) INFO  [DataNucleus.MetaData] - Class "classloader.CostomizedClassLoader" has no MetaData or annotations.
+17:55:59,243 (main) INFO  [DataNucleus.MetaData] - Class "classloader.MainTestList" has no MetaData or annotations.
+17:55:59,247 (main) INFO  [DataNucleus.MetaData] - Class "common.ArrayListToArray" has no MetaData or annotations.
+17:55:59,270 (main) INFO  [DataNucleus.MetaData] - Class "common.BinarySearchMain" has no MetaData or annotations.
+17:55:59,276 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$BlockRecord" has no MetaData or annotations.
+17:55:59,280 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$DataTransfer" has no MetaData or annotations.
+17:55:59,286 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode" has no MetaData or annotations.
+17:55:59,289 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest$1" has no MetaData or annotations.
+17:55:59,292 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest" has no MetaData or annotations.
+17:55:59,295 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest$Scope" has no MetaData or annotations.
+17:55:59,298 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest" has no MetaData or annotations.
+17:55:59,300 (main) ERROR [DataNucleus.MetaData] - Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:448)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:799)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:590)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1390)
+
+17:55:59,303 (main) INFO  [DataNucleus.MetaData] - Class "common.PID" has no MetaData or annotations.
+17:55:59,306 (main) INFO  [DataNucleus.MetaData] - Class "common.PathTest" has no MetaData or annotations.
+17:55:59,309 (main) INFO  [DataNucleus.MetaData] - Class "common.Test" has no MetaData or annotations.
+17:55:59,312 (main) INFO  [DataNucleus.MetaData] - Class "common.TestGSBHA" has no MetaData or annotations.
+17:55:59,315 (main) INFO  [DataNucleus.MetaData] - Class "common.TimeTest" has no MetaData or annotations.
+17:55:59,318 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$BlockRecord" has no MetaData or annotations.
+17:55:59,321 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$DataTransfer" has no MetaData or annotations.
+17:55:59,324 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode" has no MetaData or annotations.
+17:55:59,327 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.Main" has no MetaData or annotations.
+17:55:59,328 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:448)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:799)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:590)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1390)
+
+17:55:59,332 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.NameNodeZookeeperProxy" has no MetaData or annotations.
+17:55:59,336 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$EmptySplit" has no MetaData or annotations.
+17:55:59,339 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepInputFormat" has no MetaData or annotations.
+17:55:59,342 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepJobPartitioner" has no MetaData or annotations.
+17:55:59,348 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepMapper" has no MetaData or annotations.
+17:55:59,352 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepReducer" has no MetaData or annotations.
+17:55:59,355 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob" has no MetaData or annotations.
+17:55:59,358 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHadoopMiniCluster" has no MetaData or annotations.
+17:55:59,361 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestMRCluster" has no MetaData or annotations.
+17:55:59,364 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.ZookeeperSupport" has no MetaData or annotations.
+17:55:59,367 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.file.FileTest" has no MetaData or annotations.
+17:55:59,371 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestMapper" has no MetaData or annotations.
+17:55:59,375 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestReducer" has no MetaData or annotations.
+17:55:59,379 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter" has no MetaData or annotations.
+17:55:59,383 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOUploader" has no MetaData or annotations.
+17:55:59,387 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LogCreator" has no MetaData or annotations.
+17:55:59,390 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LzopTest" has no MetaData or annotations.
+17:55:59,394 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CacheFileReader" has no MetaData or annotations.
+17:55:59,398 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CompressedLineReader" has no MetaData or annotations.
+17:55:59,402 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.OffsetSplitsPair" has no MetaData or annotations.
+17:55:59,407 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipInputFormat" has no MetaData or annotations.
+17:55:59,411 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipReadLineInputFormat" has no MetaData or annotations.
+17:55:59,415 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestMapper" has no MetaData or annotations.
+17:55:59,418 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestReducer" has no MetaData or annotations.
+17:55:59,422 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce" has no MetaData or annotations.
+17:55:59,426 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" has no MetaData or annotations.
+17:55:59,430 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" has no MetaData or annotations.
+17:55:59,434 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce" has no MetaData or annotations.
+17:55:59,438 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.ByteArrayToCharBufferAndString" has no MetaData or annotations.
+17:55:59,443 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.Tailer" has no MetaData or annotations.
+17:55:59,447 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.TestAddFile" has no MetaData or annotations.
+17:55:59,451 (main) INFO  [DataNucleus.MetaData] - Class "hbase.TestHBase" has no MetaData or annotations.
+17:55:59,454 (main) INFO  [DataNucleus.MetaData] - Class "hive.HiveDBConnTest" has no MetaData or annotations.
+17:55:59,458 (main) INFO  [DataNucleus.MetaData] - Class "hive.LogGenerator" has no MetaData or annotations.
+17:55:59,461 (main) INFO  [DataNucleus.MetaData] - Class "ip.ACE_NAT_ADDRESS" has no MetaData or annotations.
+17:55:59,465 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoHBaseStore" has no MetaData or annotations.
+17:55:59,468 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoStore" has no MetaData or annotations.
+17:55:59,469 (main) INFO  [DataNucleus.MetaData] - Class "magick.ClassType" has no MetaData or annotations.
+17:55:59,469 (main) INFO  [DataNucleus.MetaData] - Class "magick.ColorspaceType" has no MetaData or annotations.
+17:55:59,469 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompositeOperator" has no MetaData or annotations.
+17:55:59,470 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompressionType" has no MetaData or annotations.
+17:55:59,470 (main) INFO  [DataNucleus.MetaData] - Class "magick.DecorationType" has no MetaData or annotations.
+17:55:59,474 (main) INFO  [DataNucleus.MetaData] - Class "magick.DrawInfo" has no MetaData or annotations.
+17:55:59,474 (main) INFO  [DataNucleus.MetaData] - Class "magick.ExceptionType" has no MetaData or annotations.
+17:55:59,474 (main) INFO  [DataNucleus.MetaData] - Class "magick.FilterType" has no MetaData or annotations.
+17:55:59,475 (main) INFO  [DataNucleus.MetaData] - Class "magick.GeometryFlags" has no MetaData or annotations.
+17:55:59,475 (main) INFO  [DataNucleus.MetaData] - Class "magick.GravityType" has no MetaData or annotations.
+17:55:59,479 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageInfo" has no MetaData or annotations.
+17:55:59,482 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageMagick" has no MetaData or annotations.
+17:55:59,482 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageType" has no MetaData or annotations.
+17:55:59,483 (main) INFO  [DataNucleus.MetaData] - Class "magick.InterlaceType" has no MetaData or annotations.
+17:55:59,486 (main) INFO  [DataNucleus.MetaData] - Class "magick.Magick" has no MetaData or annotations.
+17:55:59,492 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickApiException" has no MetaData or annotations.
+17:55:59,495 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickException" has no MetaData or annotations.
+17:55:59,498 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickImage" has no MetaData or annotations.
+17:55:59,501 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickInfo" has no MetaData or annotations.
+17:55:59,504 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickLoader" has no MetaData or annotations.
+17:55:59,507 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickProducer" has no MetaData or annotations.
+17:55:59,507 (main) INFO  [DataNucleus.MetaData] - Class "magick.MapMode" has no MetaData or annotations.
+17:55:59,510 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageInfo" has no MetaData or annotations.
+17:55:59,510 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageMode" has no MetaData or annotations.
+17:55:59,510 (main) INFO  [DataNucleus.MetaData] - Class "magick.NoiseType" has no MetaData or annotations.
+17:55:59,511 (main) INFO  [DataNucleus.MetaData] - Class "magick.PaintMethod" has no MetaData or annotations.
+17:55:59,514 (main) INFO  [DataNucleus.MetaData] - Class "magick.PixelPacket" has no MetaData or annotations.
+17:55:59,514 (main) INFO  [DataNucleus.MetaData] - Class "magick.PreviewType" has no MetaData or annotations.
+17:55:59,514 (main) INFO  [DataNucleus.MetaData] - Class "magick.PrimitiveType" has no MetaData or annotations.
+17:55:59,517 (main) INFO  [DataNucleus.MetaData] - Class "magick.ProfileInfo" has no MetaData or annotations.
+17:55:59,520 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantizeInfo" has no MetaData or annotations.
+17:55:59,520 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantumTypes" has no MetaData or annotations.
+17:55:59,520 (main) INFO  [DataNucleus.MetaData] - Class "magick.RenderingIntent" has no MetaData or annotations.
+17:55:59,521 (main) INFO  [DataNucleus.MetaData] - Class "magick.ResolutionType" has no MetaData or annotations.
+17:55:59,521 (main) INFO  [DataNucleus.MetaData] - Class "magick.StorageType" has no MetaData or annotations.
+17:55:59,521 (main) INFO  [DataNucleus.MetaData] - Class "magick.TimerState" has no MetaData or annotations.
+17:55:59,525 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.DisplayImageMetaData" has no MetaData or annotations.
+17:55:59,529 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas$ImageNotification" has no MetaData or annotations.
+17:55:59,534 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas" has no MetaData or annotations.
+17:55:59,538 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickViewer" has no MetaData or annotations.
+17:55:59,542 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow$MyListener" has no MetaData or annotations.
+17:55:59,547 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow" has no MetaData or annotations.
+17:55:59,550 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Basic" has no MetaData or annotations.
+17:55:59,553 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Tracer" has no MetaData or annotations.
+17:55:59,556 (main) INFO  [DataNucleus.MetaData] - Class "nfs.NfsNIOLock" has no MetaData or annotations.
+17:55:59,574 (main) INFO  [DataNucleus.MetaData] - Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" has no MetaData or annotations.
+17:55:59,577 (main) INFO  [DataNucleus.MetaData] - Class "preview.OpenofficeDoc2Pdf" has no MetaData or annotations.
+17:55:59,580 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentFileUploader" has no MetaData or annotations.
+17:55:59,584 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentReader" has no MetaData or annotations.
+17:55:59,587 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentWriterReader" has no MetaData or annotations.
+17:55:59,646 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mac/workspace/mac-test/target/classes/jdo/bean/UserBean.class" with enhanced definition
+17:55:59,646 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=541 ms, enhance=59 ms, total=600 ms. Consult the log for full details
+17:11:40,936 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+17:11:41,299 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.implementation_creator" not registered, but plugin "org.datanucleus.enhancer" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-enhancer/3.0.0-release/datanucleus-enhancer-3.0.0-release.jar refers to it.
+17:11:41,299 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.persistence_properties" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:11:41,300 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.annotations" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:11:41,300 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.callbackhandler" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:11:41,300 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.metadata_handler" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:11:41,300 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.metadata_manager" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:11:41,300 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.api_adapter" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:11:41,300 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.metadata_entityresolver" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:12:11,264 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+17:12:11,590 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.implementation_creator" not registered, but plugin "org.datanucleus.enhancer" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-enhancer/3.0.0-release/datanucleus-enhancer-3.0.0-release.jar refers to it.
+17:12:11,590 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.persistence_properties" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:12:11,590 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.annotations" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:12:11,590 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.callbackhandler" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:12:11,590 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.metadata_handler" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:12:11,590 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.metadata_manager" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:12:11,590 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.api_adapter" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:12:11,590 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.metadata_entityresolver" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:15:00,983 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+17:15:01,306 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.implementation_creator" not registered, but plugin "org.datanucleus.enhancer" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-enhancer/3.0.0-release/datanucleus-enhancer-3.0.0-release.jar refers to it.
+17:15:01,306 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.persistence_properties" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:15:01,307 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.annotations" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:15:01,307 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.callbackhandler" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:15:01,307 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.metadata_handler" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:15:01,307 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.metadata_manager" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:15:01,307 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.api_adapter" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:15:01,307 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.metadata_entityresolver" not registered, but plugin "org.datanucleus.api.jdo" defined in file:/root/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.0.1/datanucleus-api-jdo-3.0.1.jar refers to it.
+17:15:36,669 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+17:15:36,977 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.0.release) : Enhancement of classes
+17:15:37,145 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+17:15:37,151 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+17:15:37,202 (main) INFO  [DataNucleus.MetaData] - Class "classloader.CostomizedClassLoader" has no MetaData or annotations.
+17:15:37,205 (main) INFO  [DataNucleus.MetaData] - Class "classloader.MainTestList" has no MetaData or annotations.
+17:15:37,209 (main) INFO  [DataNucleus.MetaData] - Class "common.ArrayListToArray" has no MetaData or annotations.
+17:15:37,216 (main) INFO  [DataNucleus.MetaData] - Class "common.BinarySearchMain" has no MetaData or annotations.
+17:15:37,219 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$BlockRecord" has no MetaData or annotations.
+17:15:37,223 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$DataTransfer" has no MetaData or annotations.
+17:15:37,228 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode" has no MetaData or annotations.
+17:15:37,231 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest$1" has no MetaData or annotations.
+17:15:37,234 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest" has no MetaData or annotations.
+17:15:37,237 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest$Scope" has no MetaData or annotations.
+17:15:37,240 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest" has no MetaData or annotations.
+17:15:37,242 (main) ERROR [DataNucleus.MetaData] - Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:448)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:799)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:590)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1390)
+
+17:15:37,245 (main) INFO  [DataNucleus.MetaData] - Class "common.PID" has no MetaData or annotations.
+17:15:37,248 (main) INFO  [DataNucleus.MetaData] - Class "common.PathTest" has no MetaData or annotations.
+17:15:37,251 (main) INFO  [DataNucleus.MetaData] - Class "common.Test" has no MetaData or annotations.
+17:15:37,254 (main) INFO  [DataNucleus.MetaData] - Class "common.TestGSBHA" has no MetaData or annotations.
+17:15:37,257 (main) INFO  [DataNucleus.MetaData] - Class "common.TimeTest" has no MetaData or annotations.
+17:15:37,260 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$BlockRecord" has no MetaData or annotations.
+17:15:37,263 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$DataTransfer" has no MetaData or annotations.
+17:15:37,266 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode" has no MetaData or annotations.
+17:15:37,269 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.Main" has no MetaData or annotations.
+17:15:37,270 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:448)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:799)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:590)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1390)
+
+17:15:37,274 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.NameNodeZookeeperProxy" has no MetaData or annotations.
+17:15:37,277 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$EmptySplit" has no MetaData or annotations.
+17:15:37,280 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepInputFormat" has no MetaData or annotations.
+17:15:37,284 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepJobPartitioner" has no MetaData or annotations.
+17:15:37,289 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepMapper" has no MetaData or annotations.
+17:15:37,293 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepReducer" has no MetaData or annotations.
+17:15:37,296 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob" has no MetaData or annotations.
+17:15:37,299 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHadoopMiniCluster" has no MetaData or annotations.
+17:15:37,302 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestMRCluster" has no MetaData or annotations.
+17:15:37,305 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.ZookeeperSupport" has no MetaData or annotations.
+17:15:37,309 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.file.FileTest" has no MetaData or annotations.
+17:15:37,312 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestMapper" has no MetaData or annotations.
+17:15:37,316 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestReducer" has no MetaData or annotations.
+17:15:37,320 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter" has no MetaData or annotations.
+17:15:37,323 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOUploader" has no MetaData or annotations.
+17:15:37,327 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LogCreator" has no MetaData or annotations.
+17:15:37,331 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LzopTest" has no MetaData or annotations.
+17:15:37,335 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CacheFileReader" has no MetaData or annotations.
+17:15:37,339 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CompressedLineReader" has no MetaData or annotations.
+17:15:37,343 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.OffsetSplitsPair" has no MetaData or annotations.
+17:15:37,347 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipInputFormat" has no MetaData or annotations.
+17:15:37,351 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipReadLineInputFormat" has no MetaData or annotations.
+17:15:37,355 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestMapper" has no MetaData or annotations.
+17:15:37,359 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestReducer" has no MetaData or annotations.
+17:15:37,363 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce" has no MetaData or annotations.
+17:15:37,366 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" has no MetaData or annotations.
+17:15:37,370 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" has no MetaData or annotations.
+17:15:37,374 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce" has no MetaData or annotations.
+17:15:37,379 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.ByteArrayToCharBufferAndString" has no MetaData or annotations.
+17:15:37,383 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.Tailer" has no MetaData or annotations.
+17:15:37,387 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.TestAddFile" has no MetaData or annotations.
+17:15:37,391 (main) INFO  [DataNucleus.MetaData] - Class "hbase.TestHBase" has no MetaData or annotations.
+17:15:37,394 (main) INFO  [DataNucleus.MetaData] - Class "hive.HiveDBConnTest" has no MetaData or annotations.
+17:15:37,398 (main) INFO  [DataNucleus.MetaData] - Class "hive.LogGenerator" has no MetaData or annotations.
+17:15:37,401 (main) INFO  [DataNucleus.MetaData] - Class "ip.ACE_NAT_ADDRESS" has no MetaData or annotations.
+17:15:37,405 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoHBaseStore" has no MetaData or annotations.
+17:15:37,409 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoStore" has no MetaData or annotations.
+17:15:37,409 (main) INFO  [DataNucleus.MetaData] - Class "magick.ClassType" has no MetaData or annotations.
+17:15:37,409 (main) INFO  [DataNucleus.MetaData] - Class "magick.ColorspaceType" has no MetaData or annotations.
+17:15:37,410 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompositeOperator" has no MetaData or annotations.
+17:15:37,410 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompressionType" has no MetaData or annotations.
+17:15:37,410 (main) INFO  [DataNucleus.MetaData] - Class "magick.DecorationType" has no MetaData or annotations.
+17:15:37,414 (main) INFO  [DataNucleus.MetaData] - Class "magick.DrawInfo" has no MetaData or annotations.
+17:15:37,415 (main) INFO  [DataNucleus.MetaData] - Class "magick.ExceptionType" has no MetaData or annotations.
+17:15:37,415 (main) INFO  [DataNucleus.MetaData] - Class "magick.FilterType" has no MetaData or annotations.
+17:15:37,415 (main) INFO  [DataNucleus.MetaData] - Class "magick.GeometryFlags" has no MetaData or annotations.
+17:15:37,416 (main) INFO  [DataNucleus.MetaData] - Class "magick.GravityType" has no MetaData or annotations.
+17:15:37,420 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageInfo" has no MetaData or annotations.
+17:15:37,423 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageMagick" has no MetaData or annotations.
+17:15:37,424 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageType" has no MetaData or annotations.
+17:15:37,424 (main) INFO  [DataNucleus.MetaData] - Class "magick.InterlaceType" has no MetaData or annotations.
+17:15:37,427 (main) INFO  [DataNucleus.MetaData] - Class "magick.Magick" has no MetaData or annotations.
+17:15:37,433 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickApiException" has no MetaData or annotations.
+17:15:37,436 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickException" has no MetaData or annotations.
+17:15:37,439 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickImage" has no MetaData or annotations.
+17:15:37,442 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickInfo" has no MetaData or annotations.
+17:15:37,444 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickLoader" has no MetaData or annotations.
+17:15:37,447 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickProducer" has no MetaData or annotations.
+17:15:37,448 (main) INFO  [DataNucleus.MetaData] - Class "magick.MapMode" has no MetaData or annotations.
+17:15:37,451 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageInfo" has no MetaData or annotations.
+17:15:37,451 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageMode" has no MetaData or annotations.
+17:15:37,451 (main) INFO  [DataNucleus.MetaData] - Class "magick.NoiseType" has no MetaData or annotations.
+17:15:37,451 (main) INFO  [DataNucleus.MetaData] - Class "magick.PaintMethod" has no MetaData or annotations.
+17:15:37,454 (main) INFO  [DataNucleus.MetaData] - Class "magick.PixelPacket" has no MetaData or annotations.
+17:15:37,454 (main) INFO  [DataNucleus.MetaData] - Class "magick.PreviewType" has no MetaData or annotations.
+17:15:37,455 (main) INFO  [DataNucleus.MetaData] - Class "magick.PrimitiveType" has no MetaData or annotations.
+17:15:37,458 (main) INFO  [DataNucleus.MetaData] - Class "magick.ProfileInfo" has no MetaData or annotations.
+17:15:37,460 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantizeInfo" has no MetaData or annotations.
+17:15:37,461 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantumTypes" has no MetaData or annotations.
+17:15:37,461 (main) INFO  [DataNucleus.MetaData] - Class "magick.RenderingIntent" has no MetaData or annotations.
+17:15:37,461 (main) INFO  [DataNucleus.MetaData] - Class "magick.ResolutionType" has no MetaData or annotations.
+17:15:37,461 (main) INFO  [DataNucleus.MetaData] - Class "magick.StorageType" has no MetaData or annotations.
+17:15:37,462 (main) INFO  [DataNucleus.MetaData] - Class "magick.TimerState" has no MetaData or annotations.
+17:15:37,465 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.DisplayImageMetaData" has no MetaData or annotations.
+17:15:37,469 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas$ImageNotification" has no MetaData or annotations.
+17:15:37,474 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas" has no MetaData or annotations.
+17:15:37,479 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickViewer" has no MetaData or annotations.
+17:15:37,483 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow$MyListener" has no MetaData or annotations.
+17:15:37,487 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow" has no MetaData or annotations.
+17:15:37,490 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Basic" has no MetaData or annotations.
+17:15:37,493 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Tracer" has no MetaData or annotations.
+17:15:37,496 (main) INFO  [DataNucleus.MetaData] - Class "nfs.NfsNIOLock" has no MetaData or annotations.
+17:15:37,513 (main) INFO  [DataNucleus.MetaData] - Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" has no MetaData or annotations.
+17:15:37,516 (main) INFO  [DataNucleus.MetaData] - Class "preview.OpenofficeDoc2Pdf" has no MetaData or annotations.
+17:15:37,520 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentFileUploader" has no MetaData or annotations.
+17:15:37,524 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentReader" has no MetaData or annotations.
+17:15:37,527 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentWriterReader" has no MetaData or annotations.
+17:15:37,595 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mac/workspace/mac-test/target/classes/jdo/bean/UserBean.class" with enhanced definition
+17:15:37,596 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=531 ms, enhance=69 ms, total=600 ms. Consult the log for full details
+17:36:31,273 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+17:36:31,567 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.0.release) : Enhancement of classes
+17:36:31,712 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+17:36:31,717 (main) INFO  [DataNucleus.MetaData] - Class "jdo.bean.UserBean" has been specified with JDO annotations so using those.
+17:36:31,766 (main) INFO  [DataNucleus.MetaData] - Class "classloader.CostomizedClassLoader" has no MetaData or annotations.
+17:36:31,769 (main) INFO  [DataNucleus.MetaData] - Class "classloader.MainTestList" has no MetaData or annotations.
+17:36:31,773 (main) INFO  [DataNucleus.MetaData] - Class "common.ArrayListToArray" has no MetaData or annotations.
+17:36:31,780 (main) INFO  [DataNucleus.MetaData] - Class "common.BinarySearchMain" has no MetaData or annotations.
+17:36:31,783 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$BlockRecord" has no MetaData or annotations.
+17:36:31,786 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode$DataTransfer" has no MetaData or annotations.
+17:36:31,792 (main) INFO  [DataNucleus.MetaData] - Class "common.DataNode" has no MetaData or annotations.
+17:36:31,795 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest$1" has no MetaData or annotations.
+17:36:31,798 (main) INFO  [DataNucleus.MetaData] - Class "common.FutureTaskTest" has no MetaData or annotations.
+17:36:31,801 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest$Scope" has no MetaData or annotations.
+17:36:31,804 (main) INFO  [DataNucleus.MetaData] - Class "common.HashTest" has no MetaData or annotations.
+17:36:31,807 (main) ERROR [DataNucleus.MetaData] - Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "common.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:448)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:799)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:590)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1390)
+
+17:36:31,810 (main) INFO  [DataNucleus.MetaData] - Class "common.PID" has no MetaData or annotations.
+17:36:31,812 (main) INFO  [DataNucleus.MetaData] - Class "common.PathTest" has no MetaData or annotations.
+17:36:31,815 (main) INFO  [DataNucleus.MetaData] - Class "common.Test" has no MetaData or annotations.
+17:36:31,818 (main) INFO  [DataNucleus.MetaData] - Class "common.TestGSBHA" has no MetaData or annotations.
+17:36:31,821 (main) INFO  [DataNucleus.MetaData] - Class "common.TimeTest" has no MetaData or annotations.
+17:36:31,824 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$BlockRecord" has no MetaData or annotations.
+17:36:31,827 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode$DataTransfer" has no MetaData or annotations.
+17:36:31,830 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.DataNode" has no MetaData or annotations.
+17:36:31,833 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.Main" has no MetaData or annotations.
+17:36:31,834 (main) ERROR [DataNucleus.MetaData] - Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "hadoop.NameNode" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:448)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:799)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:590)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1390)
+
+17:36:31,838 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.NameNodeZookeeperProxy" has no MetaData or annotations.
+17:36:31,842 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$EmptySplit" has no MetaData or annotations.
+17:36:31,845 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepInputFormat" has no MetaData or annotations.
+17:36:31,848 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepJobPartitioner" has no MetaData or annotations.
+17:36:31,854 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepMapper" has no MetaData or annotations.
+17:36:31,857 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob$SleepReducer" has no MetaData or annotations.
+17:36:31,860 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.SleepJob" has no MetaData or annotations.
+17:36:31,863 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestHadoopMiniCluster" has no MetaData or annotations.
+17:36:31,866 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.TestMRCluster" has no MetaData or annotations.
+17:36:31,869 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.ZookeeperSupport" has no MetaData or annotations.
+17:36:31,873 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.file.FileTest" has no MetaData or annotations.
+17:36:31,877 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestMapper" has no MetaData or annotations.
+17:36:31,880 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter$TestReducer" has no MetaData or annotations.
+17:36:31,884 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOLocalWriter" has no MetaData or annotations.
+17:36:31,888 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LZOUploader" has no MetaData or annotations.
+17:36:31,892 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LogCreator" has no MetaData or annotations.
+17:36:31,896 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.lzo.LzopTest" has no MetaData or annotations.
+17:36:31,900 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CacheFileReader" has no MetaData or annotations.
+17:36:31,904 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.CompressedLineReader" has no MetaData or annotations.
+17:36:31,908 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.OffsetSplitsPair" has no MetaData or annotations.
+17:36:31,913 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipInputFormat" has no MetaData or annotations.
+17:36:31,917 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipReadLineInputFormat" has no MetaData or annotations.
+17:36:31,921 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestMapper" has no MetaData or annotations.
+17:36:31,924 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce$TestReducer" has no MetaData or annotations.
+17:36:31,928 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkipSizeMapReduce" has no MetaData or annotations.
+17:36:31,932 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestMapper" has no MetaData or annotations.
+17:36:31,936 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce$TestReducer" has no MetaData or annotations.
+17:36:31,940 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.mr.SkippableReadLineMapReduce" has no MetaData or annotations.
+17:36:31,944 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.ByteArrayToCharBufferAndString" has no MetaData or annotations.
+17:36:31,949 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.Tailer" has no MetaData or annotations.
+17:36:31,954 (main) INFO  [DataNucleus.MetaData] - Class "hadoop.tail.TestAddFile" has no MetaData or annotations.
+17:36:31,957 (main) INFO  [DataNucleus.MetaData] - Class "hbase.TestHBase" has no MetaData or annotations.
+17:36:31,961 (main) INFO  [DataNucleus.MetaData] - Class "hive.HiveDBConnTest" has no MetaData or annotations.
+17:36:31,964 (main) INFO  [DataNucleus.MetaData] - Class "hive.LogGenerator" has no MetaData or annotations.
+17:36:31,967 (main) INFO  [DataNucleus.MetaData] - Class "ip.ACE_NAT_ADDRESS" has no MetaData or annotations.
+17:36:31,971 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoHBaseStore" has no MetaData or annotations.
+17:36:31,974 (main) INFO  [DataNucleus.MetaData] - Class "jdo.JdoStore" has no MetaData or annotations.
+17:36:31,975 (main) INFO  [DataNucleus.MetaData] - Class "magick.ClassType" has no MetaData or annotations.
+17:36:31,975 (main) INFO  [DataNucleus.MetaData] - Class "magick.ColorspaceType" has no MetaData or annotations.
+17:36:31,975 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompositeOperator" has no MetaData or annotations.
+17:36:31,976 (main) INFO  [DataNucleus.MetaData] - Class "magick.CompressionType" has no MetaData or annotations.
+17:36:31,976 (main) INFO  [DataNucleus.MetaData] - Class "magick.DecorationType" has no MetaData or annotations.
+17:36:31,980 (main) INFO  [DataNucleus.MetaData] - Class "magick.DrawInfo" has no MetaData or annotations.
+17:36:31,980 (main) INFO  [DataNucleus.MetaData] - Class "magick.ExceptionType" has no MetaData or annotations.
+17:36:31,981 (main) INFO  [DataNucleus.MetaData] - Class "magick.FilterType" has no MetaData or annotations.
+17:36:31,981 (main) INFO  [DataNucleus.MetaData] - Class "magick.GeometryFlags" has no MetaData or annotations.
+17:36:31,981 (main) INFO  [DataNucleus.MetaData] - Class "magick.GravityType" has no MetaData or annotations.
+17:36:31,985 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageInfo" has no MetaData or annotations.
+17:36:31,988 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageMagick" has no MetaData or annotations.
+17:36:31,989 (main) INFO  [DataNucleus.MetaData] - Class "magick.ImageType" has no MetaData or annotations.
+17:36:31,989 (main) INFO  [DataNucleus.MetaData] - Class "magick.InterlaceType" has no MetaData or annotations.
+17:36:31,992 (main) INFO  [DataNucleus.MetaData] - Class "magick.Magick" has no MetaData or annotations.
+17:36:31,998 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickApiException" has no MetaData or annotations.
+17:36:32,000 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickException" has no MetaData or annotations.
+17:36:32,004 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickImage" has no MetaData or annotations.
+17:36:32,006 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickInfo" has no MetaData or annotations.
+17:36:32,009 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickLoader" has no MetaData or annotations.
+17:36:32,013 (main) INFO  [DataNucleus.MetaData] - Class "magick.MagickProducer" has no MetaData or annotations.
+17:36:32,013 (main) INFO  [DataNucleus.MetaData] - Class "magick.MapMode" has no MetaData or annotations.
+17:36:32,017 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageInfo" has no MetaData or annotations.
+17:36:32,017 (main) INFO  [DataNucleus.MetaData] - Class "magick.MontageMode" has no MetaData or annotations.
+17:36:32,018 (main) INFO  [DataNucleus.MetaData] - Class "magick.NoiseType" has no MetaData or annotations.
+17:36:32,018 (main) INFO  [DataNucleus.MetaData] - Class "magick.PaintMethod" has no MetaData or annotations.
+17:36:32,021 (main) INFO  [DataNucleus.MetaData] - Class "magick.PixelPacket" has no MetaData or annotations.
+17:36:32,021 (main) INFO  [DataNucleus.MetaData] - Class "magick.PreviewType" has no MetaData or annotations.
+17:36:32,021 (main) INFO  [DataNucleus.MetaData] - Class "magick.PrimitiveType" has no MetaData or annotations.
+17:36:32,024 (main) INFO  [DataNucleus.MetaData] - Class "magick.ProfileInfo" has no MetaData or annotations.
+17:36:32,027 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantizeInfo" has no MetaData or annotations.
+17:36:32,027 (main) INFO  [DataNucleus.MetaData] - Class "magick.QuantumTypes" has no MetaData or annotations.
+17:36:32,028 (main) INFO  [DataNucleus.MetaData] - Class "magick.RenderingIntent" has no MetaData or annotations.
+17:36:32,028 (main) INFO  [DataNucleus.MetaData] - Class "magick.ResolutionType" has no MetaData or annotations.
+17:36:32,028 (main) INFO  [DataNucleus.MetaData] - Class "magick.StorageType" has no MetaData or annotations.
+17:36:32,028 (main) INFO  [DataNucleus.MetaData] - Class "magick.TimerState" has no MetaData or annotations.
+17:36:32,032 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.DisplayImageMetaData" has no MetaData or annotations.
+17:36:32,036 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas$ImageNotification" has no MetaData or annotations.
+17:36:32,043 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickCanvas" has no MetaData or annotations.
+17:36:32,047 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickViewer" has no MetaData or annotations.
+17:36:32,052 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow$MyListener" has no MetaData or annotations.
+17:36:32,057 (main) INFO  [DataNucleus.MetaData] - Class "magick.util.MagickWindow" has no MetaData or annotations.
+17:36:32,060 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Basic" has no MetaData or annotations.
+17:36:32,063 (main) INFO  [DataNucleus.MetaData] - Class "mongodb.Tracer" has no MetaData or annotations.
+17:36:32,065 (main) INFO  [DataNucleus.MetaData] - Class "nfs.NfsNIOLock" has no MetaData or annotations.
+17:36:32,083 (main) INFO  [DataNucleus.MetaData] - Class "org.apache.hadoop.hdfs.server.namenode.HotSwapNameNode" has no MetaData or annotations.
+17:36:32,086 (main) INFO  [DataNucleus.MetaData] - Class "preview.OpenofficeDoc2Pdf" has no MetaData or annotations.
+17:36:32,090 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentFileUploader" has no MetaData or annotations.
+17:36:32,093 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentReader" has no MetaData or annotations.
+17:36:32,096 (main) INFO  [DataNucleus.MetaData] - Class "realtime.hadoop.ConcurrentWriterReader" has no MetaData or annotations.
+17:36:32,155 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mac/workspace/mac-test/target/classes/jdo/bean/UserBean.class" with enhanced definition
+17:36:32,155 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=523 ms, enhance=58 ms, total=581 ms. Consult the log for full details

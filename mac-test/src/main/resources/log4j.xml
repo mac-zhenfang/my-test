@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration debug="false"
+	xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<!-- This default ConsoleAppender is used to log all NON perf4j messages 
+		to System.out -->
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %c{1} - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Perf4J appenders -->
+	<!-- This  groups StopWatch log messages 
+		into GroupedTimingStatistics messages which it sends on the file appender 
+		defined below -->
+	
+
+	<!-- This file appender is used to output aggregated performance statistics -->
+	<appender name="fileAppender" class="org.apache.log4j.FileAppender">
+		<param name="File" value="perfStats.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<!-- Loggers -->
+
+	<!-- The root logger sends all log statements EXCEPT those sent to the perf4j 
+		logger to System.out. -->
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="console" />
+	</root>
+</log4j:configuration>

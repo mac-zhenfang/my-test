@@ -1,0 +1,15 @@
+1. Sharding Mode
+	if there is no ShardID specified
+			for (int j = 0; j < 200; j++) {
+			long start = System.currentTimeMillis();
+			GridFSInputFile fs = myFS.createFile(new File("F://2.jpg"));
+			fs.put("test1", "test");
+			fs.put("test2", "test");
+			fs.put("test3", "test");
+			//fs.put("files_id", j);
+	the files_id is the Sharding Key, but it is commneted, the perforamnce is very bad 
+	and no data will be insert into physical db
+2. GridFS in Replication Mode
+	Sometimes it will be very slow (in Replication Mode)
+3. GridFS in Sharding Mode
+	

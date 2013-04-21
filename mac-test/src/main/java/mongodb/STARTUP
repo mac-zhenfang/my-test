@@ -1,0 +1,141 @@
+################### Only start the shardsvr/mongos/configsrv/ - No replication ###################
+
+	************************************************************************************************
+	*								mongos(178.104:27019)	-  mongod-config (178.104:2001)		   *
+	*									|														   *
+	*					/ 			|				\				\				\			   *
+	*				178.104:27017	178.207:29017	192.130:28017	192.130:31017	178.167:30017  *
+	************************************************************************************************
+
+				
+Shard 1
+10.224.178.104:27017
+./mongod --rest --fork --logpath /var/log/mongo27017 --shardsvr --oplogSize 100  --port 27017 --dbpath /spare/mongo_27017
+
+Shard 2
+10.224.178.207:29017
+./mongod --rest --fork --logpath /var/log/mongo29017 --shardsvr --oplogSize 100  --port 29017 --dbpath /spare/mongo_29017
+
+Shard3
+
+10.224.192.130:28017
+
+./mongod --rest --fork --logpath /var/log/mongo28017 --shardsvr --oplogSize 100  --port 28017 --dbpath /spare/mongo_28017
+
+Shard4
+10.224.178.167:30017
+
+./mongod --rest --fork --logpath /var/log/mongo30017 --shardsvr --oplogSize 100 --port 30017 --dbpath /spare/mongo_30017
+
+
+Shard 5
+10.224.192.130:31017
+
+./mongod --rest --fork --logpath /var/log/mongo31017 --shardsvr --oplogSize 100 --port 31017 --dbpath /spare/mongo_31017
+Config Server
+
+./mongod --rest --fork --configsvr --logpath /var/log/mongo2001 --dbpath /spare/mongo_config_2001 --port 2001
+
+Routing Server 
+./mongos --configdb 10.224.178.104:2001 --fork --logpath /var/log/mongo27019 --chunkSize 1 --port 27019
+
+
+
+##################### build up the replication set #####################
+
+
+##################### add sever into shards ####################################
+
+List shards
+db.runCommand({ listshards : 1});
+
+db.runCommand( { addshard : "10.224.178.104:27017" } );
+db.runCommand( { addshard : "10.224.178.207:29017" } );
+
+
+1. Add Shard3 into mongos(10.224.178.104:27019)
+
+	db.runCommand( { addshard : "10.224.192.130:28017" } );
+
+2.Add Shard4 into mongos(10.224.178.104:27019)
+
+	db.runCommand( { addshard : "10.224.178.167:30017" } );
+
+
+2.Add Shard5 into mongos(10.224.178.104:27019)
+
+	db.runCommand( { addshard : "10.224.192.130:31017" } );
+	
+Enable Shards
+
+#Make the data base mac as sharded
+db.runCommand({enablesharding : "mp"});
+
+#Make the mac.fs.files (fs as prefix) a collection and the sharding key 
+db.runCommand( { shardcollection : "logs.webex11", key : {traceid: 1} });
+View Sharding Details
+
+> use admin
+> db.printShardingStatus();
+
+##################### Enable shard map-key with the new db ####################################
+#Make the data base mac as sharded
+db.runCommand({enablesharding : "log"});
+
+#Make the log.webex11 (fs as prefix) a collection and the sharding key 
+db.runCommand( { shardcollection : "log.webex11", key : {traceid: 1} });
+
+#Make the log.webex11.ldsf (fs as prefix) a collection and the sharding key 
+db.runCommand( { shardcollection : "log.webex11.ldsf", key : {traceid: 1} });
+
+################### Overall start the shardsvr/mongos/configsrv/ ###################
+DMS Shard1
+[[DMS1-Shard1: 10.224.178.104 27017]]
+./mongod --rest --fork --logpath /var/log/mongo27017 --shardsvr --oplogSize 100 --replSet dms --port 27017 --dbpath /spare/mongo_1
+
+[[DMS2-Shard1: 10.224.178.104 27018]]
+./mongod --rest --fork --logpath /var/log/mongo27018 --shardsvr --oplogSize 100 --replSet dms --port 27018 --dbpath /spare/mongo_2
+
+[[DMS3-Shard1: 10.224.178.207 27017]]
+./mongod --rest --fork --logpath /var/log/mongo27017 --shardsvr --oplogSize 100 --replSet dms --port 27017 --dbpath /spare/mongo_3
+
+[[Config Server: 10.224.178.104 20000]]
+
+./mongod --rest --fork --configsvr --logpath /var/log/mongo2000 --dbpath /spare/mongo_config --port 20000
+
+[[Mongos]]
+./mongos --configdb 10.224.178.104:20000 --fork --logpath /var/log/mongo27019 --chunkSize 1 --port 27019
+
+
+
+Shard2
+
+DMS1-Shard2
+./mongod --rest --fork --logpath /var/log/mongo29017 --shardsvr --oplogSize 100 --replSet dms2 --port 29017 --dbpath /spare/mongo_11
+
+DMS2-Shard2: 10.224.178.104 27018
+./mongod --rest --fork --logpath /var/log/mongo29018 --shardsvr --oplogSize 100 --replSet dms2 --port 29018 --dbpath /spare/mongo_22
+
+DMS3-Shard2: 10.224.178.207 29017
+./mongod --rest --fork --logpath /var/log/mongo29017 --shardsvr --oplogSize 100 --replSet dms2 --port 29017 --dbpath /spare/mongo_33
+
+
+Shard3
+
+10.224.192.130:28017
+
+./mongod --rest --fork --logpath /var/log/mongo28017 --shardsvr --oplogSize 100  --port 28017 --dbpath /spare/mongo_111
+
+
+Shard4
+10.224.178.167:30017
+
+./mongod --rest --fork --logpath /var/log/mongo30017 --shardsvr --oplogSize 100 --port 30017 --dbpath /spare/mongo_1111
+
+
+Shard 5
+10.224.192.130:31017
+
+./mongod --rest --fork --logpath /var/log/mongo31017 --shardsvr --oplogSize 100 --port 31017 --dbpath /spare/mongo_11111
+
+

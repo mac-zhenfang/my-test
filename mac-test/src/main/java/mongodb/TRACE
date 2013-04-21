@@ -1,0 +1,357 @@
+Architecture <http://www.mongodb.org/display/DOCS/Architecture+and+Components>
+	-> processes
+		-> mongod: single mongo server
+		-> mongos: auto-sharding
+	-> Sharding
+	-> Replication <http://www.mongodb.org/display/DOCS/Replication>
+		=> Master-Slave-Slave (like MySQL, http://www.mongodb.org/display/DOCS/Master+Slave)
+			Master
+			/	\
+		      Slave     Slave
+
+		!!!!!NEEDS MANUAL FAILOVER!!!!
+
+		=> Replication Sets <http://www.mongodb.org/display/DOCS/Replica+Sets>
+			Replica Sets are "Replica Pairs version 2"
+		   1. Supports 1-7 servers in the cluster
+	           2. Automatic failover and recovery
+		   3. Data center aware (v1.6.1) (rack aware too, eventually)
+		   4. Supports passive set members (slaves) that are never primary		
+	-> Caching
+	
+
+
+Start Replication Sets
+
+One Node: 
+
+./mongod --repair
+
+./mongodi --rest --replSet --port 27017 --dbpath /spare/mongo_1
+
+./mongod -fork -logpath=/var/log/mongo_2 --replSet foo --port 27018 --dbpath /spare/mongo_2
+
+./mongod -fork -logpath=/var/log/mongo_2 --replSet foo --port 27019 --dbpath /spare/mongo_3
+
+
+DMS1: 10.224.178.104 27017
+./mongod --rest --oplogSize 100 --replSet dms --port 27017 --dbpath /spare/mongo_1
+
+DMS2: 10.224.178.104 27018
+./mongod --rest --oplogSize 100 --replSet dms --port 27018 --dbpath /spare/mongo_2
+
+DMS3: 10.224.178.207 27017
+./mongod --rest --oplogSize 100 --replSet dms --port 27017 --dbpath /spare/mongo_3
+
+> cfg = {_id : "dms",members : [{_id:0, host : "10.224.178.104:27017"},{_id:1, host : "10.224.178.104:27018"}, {_id:2, host:"10.224.178.207:27017"}]} 
+
+
+rs.initiate(cfg)  
+
+rs.status() // all three servers are in one Set and rs.status() can see each other
+
+10.224.178.104:27107 : master
+10.224.178.104:27108 : second
+10.224.178.207:27107 : second
+
+ ============== Primary failover then failback, it will become secondary
+
+
+
+
+ERROR:
+
+{
+        "info" : "try querying local.system.replset to see current configuration",
+        "errmsg" : "already initialized",
+        "ok" : 0
+}
+> rs.add("dms2:27017")
+{
+        "assertion" : "bad config - dups?",
+        "assertionCode" : 13278,
+        "errmsg" : "db assertion failure",
+        "ok" : 0
+}
+Replication Status
+
+> rs.status()
+{
+        "set" : "dms",
+        "date" : "Wed Aug 25 2010 00:00:19 GMT+0000 (GMT)",
+        "myState" : 1,
+        "members" : [
+                {
+                        "_id" : 0,
+                        "name" : "dms1:27017",
+                        "health" : 1,
+                        "state" : 1,
+                        "self" : true
+                },
+                {
+                        "_id" : 1,
+                        "name" : "dms2:27018",
+                        "health" : 1,
+                        "state" : 2,
+                        "uptime" : 164,
+                        "lastHeartbeat" : "Wed Aug 25 2010 00:00:18 GMT+0000 (GMT)"
+                },
+                {
+                        "_id" : 2,
+                        "name" : "dms3:27017",
+                        "health" : 0,
+                        "state" : 6,
+                        "uptime" : 0,
+                        "lastHeartbeat" : "Wed Aug 25 2010 00:00:18 GMT+0000 (GMT)",
+                        "errmsg" : "still initializing"
+                }
+        ],
+        "ok" : 1
+}
+
+
+
+Sharding:
+
+
+2 shards
+1 config server
+1 mongos for routing
+
+DMS1-Shard1
+./mongod --rest --fork --logpath /var/log/mongo27017 --shardsvr --oplogSize 100 --replSet dms --port 27017 --dbpath /spare/mongo_1
+
+DMS2-Shard1: 10.224.178.104 27018
+./mongod --rest --fork --logpath /var/log/mongo27018 --shardsvr --oplogSize 100 --replSet dms --port 27018 --dbpath /spare/mongo_2
+
+DMS3-Shard1: 10.224.178.207 27017
+./mongod --rest --fork --logpath /var/log/mongo27017 --shardsvr --oplogSize 100 --replSet dms --port 27017 --dbpath /spare/mongo_3
+
+
+
+Config Server:
+
+./mongod --rest --fork --configsvr --logpath /var/log/mongo2000 --dbpath /spare/mongo_config --port 20000
+
+
+Mongos
+./mongos --configdb 10.224.178.104:20000 --fork --logpath /var/log/mongo27019 --chunkSize 1 --port 27019
+
+
+
+Notice:
+
+One Shard can connect to different Replication sets, but can not replcately add the server in one replicateion set\
+
+
+
+
+Two shards
+
+
+
+DMS1-Shard1
+./mongod --rest --fork --logpath /var/log/mongo27017 --shardsvr --oplogSize 100 --replSet dms --port 27017 --dbpath /spare/mongo_1
+DMS2-Shard1: 10.224.178.104 27018
+
+./mongod --rest --fork --logpath /var/log/mongo27018 --shardsvr --oplogSize 100 --replSet dms --port 27018 --dbpath /spare/mongo_2
+
+
+DMS3-Shard1: 10.224.178.207 27017
+./mongod --rest --shardsvr --oplogSize 100 --replSet dms --port 27017 --dbpath /spare/mongo_3
+
+./mongod --rest --fork --logpath /var/log/mongo27017 --shardsvr --oplogSize 100 --replSet dms --port 27017 --dbpath /spare/mongo_3
+
+
+
+DMS1-Shard2
+./mongod --rest --shardsvr --oplogSize 100 --replSet dms2 --port 29017 --dbpath /spare/mongo_11
+
+DMS2-Shard2: 10.224.178.104 27018
+./mongod --rest --shardsvr --oplogSize 100 --replSet dms2 --port 29018 --dbpath /spare/mongo_22
+
+DMS3-Shard2: 10.224.178.207 27017
+./mongod --rest --shardsvr --oplogSize 100 --replSet dms2 --port 29017 --dbpath /spare/mongo_33
+
+
+
+
+cfg = {_id : "dms2",members : [{_id:0, host : "10.224.178.104:297017"},{_id:1, host : "10.224.178.104:29018"}, {_id:2, host:"10.224.178.207:29017"}]} 
+
+
+{
+        "_id" : "dms2",
+        "members" : [
+                {
+                        "_id" : 0,
+                        "host" : "10.224.178.104:29017"
+                },
+                {
+                        "_id" : 1,
+                        "host" : "10.224.178.104:29018"
+                },
+                {
+                        "_id" : 2,
+                        "host" : "10.224.178.207:29017"
+                }
+        ]
+}
+> rs.initiate(cfg)                                                                    
+{
+        "info" : "Config now saved locally.  Should come online in about a minute.",
+        "ok" : 1
+}
+> 
+
+DMS:
+
+> db.runCommand( { addshard : "10.224.178.104:27017" } )
+
+DMS2:
+> db.runCommand( { addshard : "10.224.178.104:29017" } )
+{ "shardAdded" : "shard0001", "ok" : 1 }
+> 
+
+List Shards: 
+> db.runCommand( { listshards : 1 } );
+{
+        "shards" : [
+                {
+                        "_id" : "shard0000",
+                        "host" : "10.224.178.104:27017"
+                },
+                {
+                        "_id" : "shard0001",
+                        "host" : "10.224.178.207:29017"
+                }
+        ],
+        "ok" : 1
+}
+> 
+
+
+
+
+Trace of Replacing a Shard
+
+> db.runCommand( { listshards : 1 } );
+{
+        "shards" : [
+                {
+                        "_id" : "shard0000",
+                        "host" : "10.224.178.104:27017"
+                },
+                {
+                        "_id" : "shard0001",
+                        "host" : "10.224.178.207:29017"
+                }
+        ],
+        "ok" : 1
+}
+> db.runCommand( { removeshard : "10.224.178.207:29017" } );
+{
+        "msg" : "draining started successfully",
+        "state" : "started",
+        "shard" : "shard0001",
+        "ok" : 1
+}
+> db.runCommand( { listshards : 1 } );                      
+{
+        "shards" : [
+                {
+                        "_id" : "shard0000",
+                        "host" : "10.224.178.104:27017"
+                },
+                {
+                        "_id" : "shard0001",
+                        "draining" : true,
+                        "host" : "10.224.178.207:29017"
+                }
+        ],
+        "ok" : 1
+}
+> db.runCommand( { listshards : 1 } );
+{
+        "shards" : [
+                {
+                        "_id" : "shard0000",
+                        "host" : "10.224.178.104:27017"
+                },
+                {
+                        "_id" : "shard0001",
+                        "draining" : true,
+                        "host" : "10.224.178.207:29017"
+                }
+        ],
+        "ok" : 1
+}
+> db.runCommand( { listshards : 1 } );
+{
+        "shards" : [
+                {
+                        "_id" : "shard0000",
+                        "host" : "10.224.178.104:27017"
+                },
+                {
+                        "_id" : "shard0001",
+                        "draining" : true,
+                        "host" : "10.224.178.207:29017"
+                }
+        ],
+        "ok" : 1
+}
+> db.runCommand( { addshard : "10.224.178.104:29017" } )
+\{ "shardAdded" : "shard0002", "ok" : 1 }
+> db.runCommand( { listshards : 1 } );                  
+{
+        "shards" : [
+                {
+                        "_id" : "shard0000",
+                        "host" : "10.224.178.104:27017"
+                },
+                {
+                        "_id" : "shard0001",
+                        "draining" : true,
+                        "host" : "10.224.178.207:29017"
+                },
+                {
+                        "_id" : "shard0002",
+                        "host" : "10.224.178.104:29017"
+                }
+        ],
+        "ok" : 1
+}
+> db.runCommand( { removeshard : "10.224.178.207:29017" } );
+{
+        "msg" : "removeshard completed successfully",
+        "state" : "completed",
+        "shard" : "shard0001",
+        "ok" : 1
+}
+> db.runCommand( { listshards : 1 } );                      
+{
+        "shards" : [
+                {
+                        "_id" : "shard0000",
+                        "host" : "10.224.178.104:27017"
+                },
+                {
+                        "_id" : "shard0002",
+                        "host" : "10.224.178.104:29017"
+                }
+        ],
+        "ok" : 1
+}
+
+#Make the data base mac as sharded
+db.runCommand({enablesharding : "mp"});
+
+#Make the mac.fs.files (fs as prefix) a collection and the sharding key 
+db.runCommand( { shardcollection : "log.webex11", key : {traceid: 1} });
+
+
+
+On User's Email
+
+
+db.runCommand( { shardcollection : "test.users" , key : { email : 1 } , unique : true } );
